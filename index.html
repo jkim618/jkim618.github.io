@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='index.css' type='text/css' />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Roboto:300,400&display=swap" rel="stylesheet">
+    <title>Jane Kim.</title>
+</head>
+<body>
+
+<script>
+    function slideDown(){
+        $('html,body').animate({scrollTop:
+        $(".introduction").offset().top},200)
+        }
+    function three(){
+        $('html,body').animate({scrollTop:
+        $(".three").offset().top},700)
+    }
+    function experience(){
+        $('html,body').animate({scrollTop:
+        $(".section2").offset().top},900)
+    }
+    function contact(){
+        $('html,body').animate({scrollTop:
+        $(".footer").offset().top},1000)
+    }
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+    }
+}
+</script>
+
+<div class="first" id="home">
+    <img src="mylogo.jpg" href="#home" style="width: 100px" id="first-logo"/>
+    <div class="leftt">
+        <div class="left-content">
+            <div class="one">
+                <h1>Developer.</h1>
+            </div>
+            <div class="one">
+                <h1>Designer.</h1>
+            </div>
+            <div class="one">
+                <h1>Dancer.</h1>
+            </div>
+            <br/>
+            <p>Jane Kim. Currently a 4th year UVA student looking for full-time position as a front-end developer. 
+                Specializing in front-end web development in languages such as Javascript, HTML, CSS, and ReactJS.</p>
+            <img src="arrow.png" onclick="slideDown()" id="arrow">
+        </div>
+    </div>
+        <div class="banner-area">
+            <a href="#home">
+                <div id="nav1" class="btn-area">
+                    <h2>
+                        <i class="fa fa-home"></i>
+                        Home
+                    </h2>
+                </div>
+            </a>
+            <a href="#intro">
+                <div id="nav2" class="btn-area">
+                    <h2>
+                        <i class="fa fa-address-book"></i>
+                        About Me
+                    </h2>
+                </div>
+            </a>
+            <a href="#skill">
+                <div id="nav3" class="btn-area">
+                    <h2>
+                        <i class="fa fa-pencil"></i>
+                        Skills</h2>
+                </div>
+            </a>
+            <a href="#exp">
+                <div id="nav4" class="btn-area">
+                    <h2>
+                        <i class="fa fa-book"></i>
+                        Experience
+                    </h2>
+                </div>
+            </a>
+            <a href="#contact">
+                <div id="nav5" class="btn-area">
+                    <h2>
+                        <i class="fa fa-phone"></i>
+                        Contact
+                    </h2>
+                </div>
+            </a>
+        </div>
+</div>
+
+<div class="introduction" id="intro">
+    <h1 id="h1">Introduction</h1>
+    <div class="intro-container">
+        <div class = "intro-column">
+            <div class = "intro-pic">
+                <img src="jane-vertical.jpg">
+            </div>
+        </div>
+        <div class = "intro-column">
+            <div class = "intro-box">
+                <div class="intro-box-content">
+                    <h3>Hello, I am Jane Kim.</h3>
+                    <p>I am currently a rising Fourth Year at University of Virginia majoring in Computer Science and
+                        minoring in Economics. After getting involved in a Web Development program at HackCville at UVA,
+                        I grew interest in front-end web development. I am constantly looking for opportunities to improve
+                        both my technical and designing skills by building applications that are modern and interesting.
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="parallax2">
+</div>    
+
+<div class="three" id="skill">
+    <h1 id="h1">Developer, Designer, Dancer</h1>
+    <div class="row">
+        <div class="column">
+            <img src="icon1.jpg">
+            <p>I love developing and building useful and creative applications that further strenghten my interests and passion.</p>
+        </div>
+        <div class="column">
+            <img src="icon2.jpg">
+            <p>I enjoy creating clean and modern design. I was an Artistic Director at 
+                K-Edge Dance Crew at UVA, creating . I am currently a Public Relations 
+                chair at Korean Students Association at UVA, creating all promotional
+                materials including flyers.
+            </p>
+        </div>
+        <div class="column">
+            <img src="icon3.jpg">
+            <p>I have a high passion for dancing. I am currently in K-Edge Dance Crew at UVA,
+                a K-Pop dance crew that spreads students' passion for dancing and K-Pop through
+                performances and social media
+            </p>
+        </div>
+    </div>
+    <hr id = "skills_hr">
+    <div class = "skills">
+        <img src="skills.jpg">
+    </div>
+</div>
+
+<div class="parallax3">
+</div>  
+
+<div class = "section2" id="exp">
+    <h1 id ="h1">Experience</h1>
+    <div class="container1">
+        <div class="container2">
+            <div class = "col-1">
+                <div class= "col-1-desc">
+                    <h1>Software Engineer Intern</h1>
+                    <h3>WillowTree, Charlottesville, VA</h3>
+                    <p>June 2019 - August 2019</p>
+                    <br/>
+                    <p id="desc-p">I worked at WillowTree as a Software Engineer Intern
+                        in the web development team for HBO Nordic. I implemented 
+                        UI changes for smooth, responsive design and other critical fixes
+                        in order to fix the discrepancies between different
+                        web browers and the mobile version of the application.
+                    </p>
+                </div>
+            </div>
+            <div class = "col-2">
+                <div class="col-2-desc">
+                    <img src="willowtree.jpg" style="width:175px"/>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+                <div class = "col-1">
+                    <div class= "col-1-desc">
+                        <h1>Technical Lead</h1>
+                        <h3>Greens to Grounds, Charlottesville, VA</h3>
+                        <p>November 2018 - May 2019</p>
+                        <br/>
+                        <p id ="customer-service">As a technical lead, I managed the website and the payment portal.
+                            I coordinated front-end and back-end of the website by implementing changes from marketing 
+                            and making sure all operations obtain necessary documents
+                        </p>
+                    </div>
+                </div>
+                <div class = "col-2">
+                    <div class="col-2-desc">
+                        <img src="greens.jpg" style="width:175px"/>
+                    </div>
+                </div>
+            </div>
+        <div class="container2">
+            <div class = "col-1">
+                <div class= "col-1-desc">
+                    <h1>Web Developer</h1>
+                    <h3>HackCville, Charlottesville, VA</h3>
+                    <p>August 2018 - December 2018</p>
+                    <br/>
+                    <p id="desc-p">I participated in a Student Web Development program
+                        where I learned basic prototyping skills with Figma.
+                        I also learned to make static webpages with HTML, CSS,
+                        Javascript. 
+                    </p>
+                </div>
+            </div>
+            <div class = "col-2">
+                <div class="col-2-desc">
+                    <img src="hackcville.jpg" style="width:175px"/>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class = "col-1">
+                <div class= "col-1-desc">
+                    <h1>Customer Service Representative</h1>
+                    <h3>Nonstop Delivery, Chantilly, VA</h3>
+                    <p>July 2017 - August 2018</p>
+                    <br/>
+                    <p id ="customer-service">As a Customer Service Representative, I answered inbound customer care calls, 
+                        replied to emails, and acted as an information resource. Serving as one of the lead chat
+                        operators, I decreased the wait time of customers by upto 30% by quickly finding solutions and answers.
+                    </p>
+                </div>
+            </div>
+            <div class = "col-2">
+                <div class="col-2-desc">
+                    <img src="nsd.jpg" style="width:175px"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer" id="contact">
+        <h1 id ="h1">Let's Connect</h1>
+        <h4>I am always looking for opportunities to explore my interests! 
+            Feel free to reach out to me if you want to chat!</h4>
+        <div class="footer-container">
+            <div class="footer-icons">
+                <div class="footer-git">
+                    <a href="https://github.com/jkim618" style="color: inherit;"target="_blank">
+                        <i id="linked" class="fa fa-github" style="font-size:36px">
+                        </i>
+                        <p>https://github.com/jkim618</p>
+                    </a>
+                </div>
+                <div class="footer-in">
+                    <a href="https://www.linkedin.com/in/jooaeunkim618/" style="color: inherit;"target="_blank">
+                        <i id="github" class="fa fa-linkedin-square" style="font-size:36px">
+                        </i>
+                        <p>https://www.linkedin.com/in/jooaeunkim618/</p>
+                    </a>
+                </div>
+                <div class="footer-mail">
+                    <a href="mailto:jk9ay@virginia.edu?subject=Mail from Website" style="color: inherit;"target="_blank">
+                        <i id="linked" class="fa fa-envelope" style="font-size:36px">
+                        </i>
+                        <p>jk9ay@virginia.edu</p>
+                    </a>
+                </div>
+            <div class="copyright">
+                <p id="copyright">Copyright © 2019 Jane Kim</p>
+                <p id="copyright2">HTML | CSS | JavaScript | Front-End Development</p>
+            </div>
+        </div>
+</div>
+    
+
+</body>
+
+<script>
+
+
+</script>
+</html>
