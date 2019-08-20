@@ -258,19 +258,19 @@ header li a:hover{
   display: none;
 }
 
-
 .first{
   background-image: url('backgroundme.jpg');
   background-position: center top; 
   background-repeat: no-repeat;
+  background-size: 1300px;
   background-attachment: fixed;
-  height: 50%;
+  height: 40%;
 }
 
 .leftt{
   float: left;
   width: 45%;
-  height: 50%;
+  height: 60%;
   position: relative;
   color: #e5e5e5;
 }
@@ -286,6 +286,20 @@ header li a:hover{
   margin: 0 auto;
   font-size: 45px;
   text-shadow: 5px 2px #232c38;
+}
+.one{
+  position: relative;
+  z-index:1;
+}
+
+.one:after{
+  content:"";
+  position:absolute;
+  border: 5px solid #77f8f3;
+  width: 210px;
+  z-index:-1;
+  top: 76%;
+  left: 7%;
 }
 
 
@@ -604,17 +618,27 @@ header li a:hover{
 }
 
 .parallax2{
-    background-image:url("kedge.jpg");
-    background-repeat:no-repeat;
-    filter: brightness(80%);
-    background-attachment:fixed;
-    background-size: cover;
-    background-position:center;
-    height:60%;
-    width:100%;
-    margin:0;
-    padding:0;
-    position:relative
+  background-image:url("kedge.jpg");
+  height: 40%;
+  filter: brightness(80%);
+  background-size: 1200px;
+  background-position: center -70px;
+}
+
+@media only screen and (min-device-width: 420px){
+  .parallax2{
+      background-image:url("kedge.jpg");
+      background-repeat:no-repeat;
+      filter: brightness(80%);
+      background-attachment:fixed;
+      background-size: cover;
+      background-position:center;
+      height:60%;
+      width:100%;
+      margin:0;
+      padding:0;
+      position:relative
+  }
 }
 
 .parallax3{
