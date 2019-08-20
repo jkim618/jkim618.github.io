@@ -144,11 +144,11 @@ header li a:hover{
 
 .intro-box-content p{
   margin: 15px;
-  font-size: 26px;
+  font-size: 29px;
 }
 
 .intro-box-content h3{
-  font-size: 46px;
+  font-size: 50px;
   margin: 15px;
 }
 
@@ -258,7 +258,7 @@ header li a:hover{
 
 .left-content{
   padding-left: 20%;
-  padding-top: 50%;
+  padding-top: 28%;
   padding-right: 10%;
   position: absolute;
 }
@@ -268,9 +268,19 @@ header li a:hover{
   font-size: 45px;
   text-shadow: 5px 2px #232c38;
 }
+
+.left-content p{
+  font-size: 20px;
+}
+
 .one{
   position: relative;
   z-index:1;
+}
+
+.one h1{
+  font-size: 65px;
+  color: #e5e5e5;
 }
 
 .one:after{
@@ -338,9 +348,18 @@ header li a:hover{
   text-shadow: 5px 2px #232c38;
 }
 
+.left-content p{
+  font-size: 16px;
+}
+
 .one{
   position: relative;
   z-index:1;
+}
+
+.one h1{
+  font-size: 50px;
+  color: #e5e5e5;
 }
 
 .one:after{
@@ -574,6 +593,15 @@ header li a:hover{
   background-position: center -70px;
 }
 
+.parallax3{
+  background-image:url("interns.jpg");
+  height: 40%;
+  filter: brightness(80%);
+  background-size: 1300px;
+  background-position:  -110px;
+}
+
+/*parallax divs for desktop*/
 @media only screen and (min-device-width: 420px){
   .parallax2{
       background-image:url("kedge.jpg");
@@ -588,9 +616,7 @@ header li a:hover{
       padding:0;
       position:relative
   }
-}
-
-.parallax3{
+  .parallax3{
     background-image:url("interns.jpg");
     filter: brightness(70%);
     background-repeat:no-repeat;
@@ -602,6 +628,7 @@ header li a:hover{
     margin:0;
     padding:0;
     position:relative
+  }
 }
 
 .parallax{
