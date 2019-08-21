@@ -478,7 +478,7 @@ display: block;
   margin-right: 45px;
   margin-bottom: 48px;
   padding-top: 0;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .column img{
@@ -633,57 +633,6 @@ display: block;
 }
 
 /*experience for phones*/
-/* .section2{
-  background:#232c38;
-  height:auto;
-  color: #c5c6c8;
-}
-
-.container2{
-  position: relative;
-}
-
-.col-1-desc h1{
-  margin: 0 auto;
-  margin-left: 35px;
-}
-
-.col-1-desc h3{
-  margin: 0 auto;
-  margin-left: 35px;
-}
-
-.col-1-desc p{
-  margin: 0 auto;
-  margin-left: 35px;
-  max-width: 600px;
-}
-
-#desc-p{
-  margin-top: 50px;
-  margin-bottom: 65px;
-  font-size: 15px;
-  padding-right: 50px;
-}
-
-#customer-service{
-  margin-top: 50px;
-  padding-bottom: 50px;
-  padding-right: 50px;
-}
-
-.col-2{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: auto;
-}
-
-.col-2 img{
-  margin-left: 70%;
-  width: 250px;
-} */
-
 .section2{
   background:#232c38;
   height:auto;
@@ -694,7 +643,6 @@ display: block;
   text-align: center;
 }
 
-
 .col-2 img{
   width: 520px;
 }
@@ -702,17 +650,17 @@ display: block;
 .col-1-desc h1{
   padding-top: 20px;
   margin: 0 auto;
-  font-size: 50px;
+  font-size: 65px;
 }
 
 .col-1-desc h3{
   margin: 0 auto;
-  font-size: 32px;
+  font-size: 40px;
 }
 
 .col-1-desc p{
   margin: 0 auto;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 #desc-p{
@@ -844,6 +792,7 @@ display: block;
 }
 /*end of experience for desktop/tablet*/
 
+
 .footer{
   background-color:#646873;
   height: auto;
@@ -853,7 +802,7 @@ display: block;
   color: #c5c6c8;
   text-align:center;
   margin-top: -18px;
-  font-size: 26px;
+  font-size: 50px;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -867,16 +816,34 @@ display: block;
 .footer-in p{
   display: inline-block;
   margin: 0 auto;
+  font-size: 40px;
 }
 
 .footer-git p{
   display: inline-block;
   margin: 0 auto;
+  font-size: 40px;
 }
 
 .footer-mail p{
   display: inline-block;
   margin: 0 auto;
+  font-size: 40px;
+}
+
+.copyright{
+  margin-top: 45px;
+}
+
+.copyright p{
+  margin: 0 auto;
+  color: #939596;
+  font-size: 18px;
+}
+
+#copyright2{
+  font-size: 15px;
+  padding-bottom: 10px;
 }
 
 
@@ -904,6 +871,7 @@ display: block;
 
 .footer-in p{
   display: inline-block;
+  font-size: 16px;
 }
 
 .footer-in:hover{
@@ -917,6 +885,7 @@ display: block;
 
 .footer-git p{
   display: inline-block;
+  font-size: 16px;
 }
 
 .footer-git:hover{ 
@@ -930,6 +899,7 @@ display: block;
 
 .footer-mail p{
   display: inline-block;
+  font-size: 16px;
 }
 
 .footer-mail:hover{
@@ -948,6 +918,7 @@ display: block;
 .copyright p{
   margin: 0 auto;
   color: #939596;
+  font-size: 15px;
 }
 
 #copyright2{
