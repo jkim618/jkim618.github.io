@@ -13,6 +13,16 @@
 </head>
 
 <body>
+    <nav class="sticky-nav">
+        <a class="logo" href="index.html">
+            <img src="logoTransparent.png" alt="Your Logo">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="JooaEunKim_UXDesignerResume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
     <div id="scroll-container">
         <div class="wrapper">
             <div class="content">
@@ -165,13 +175,13 @@
             // Define animations for each section
             var tl = gsap.timeline();
 
-            // tl.from(".content h1", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".content p", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".three-column", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".content h2", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".content ul", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".imgContainer", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".dark-grey-box", { opacity: 0, y: 50, duration: 0.5 });
+            tl.from(".content h1", { opacity: 0, y: 50, duration: 0.5 })
+                .from(".content p", { opacity: 0, y: 50, duration: 0.5 })
+                .from(".three-column", { opacity: 0, y: 50, duration: 0.5 })
+                .from(".content h2", { opacity: 0, y: 50, duration: 0.5 })
+                .from(".content ul", { opacity: 0, y: 50, duration: 0.5 })
+                .from(".imgContainer", { opacity: 0, y: 50, duration: 0.5 })
+                .from(".dark-grey-box", { opacity: 0, y: 50, duration: 0.5 });
 
             // Create a ScrollMagic scene
             new ScrollMagic.Scene({

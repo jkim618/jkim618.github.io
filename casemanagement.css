@@ -8,6 +8,62 @@ body {
     color: #4A4A4B;
 }
 
+
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  
+  .sticky-nav .logo {
+    flex-grow: 1; /* Allow the logo to grow and take up remaining space */
+  }
+  
+  .sticky-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 80px; /* Add margin to the right of the links */
+  }
+  
+  .sticky-nav ul li {
+    margin-left: 32px;
+  }
+  
+  .sticky-nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  .sticky-nav ul li a {
+    text-decoration: none;
+    color: #989898;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .sticky-nav ul li a:hover {
+    color: #333;
+  }
+  .logo{
+    margin-left: 40px;
+  }
+  
+  .logo img {
+    max-width: 60px; /* Adjust the max-width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+  }
+  
+
 /* Adjust main content to avoid overlap with sidebar */
 .wrapper {
     display: flex; /* Use flexbox for layout */
@@ -20,6 +76,7 @@ body {
     margin-left: auto; /* Auto margin on left side */
     margin-right: auto; /* Auto margin on right side */
     max-width: 1000px; /* Set maximum width for the content */
+    margin-top: 60px;
 }
 
 h1 {
@@ -39,6 +96,23 @@ h2 {
 p {
     line-height: 1.5;
     font-size: 16px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    grid-gap: 10px; /* Gap between grid items */
+    margin-top: 20px;
+}
+
+.grid-item {
+    overflow: hidden; /* Prevent images from overflowing */
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below inline-block elements */
 }
 
 

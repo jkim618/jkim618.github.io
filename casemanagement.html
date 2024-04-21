@@ -13,14 +13,17 @@
 </head>
 
 <body>
+    <nav class="sticky-nav">
+        <a class="logo" href="index.html">
+            <img src="logoTransparent.png" alt="Your Logo">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="JooaEunKim_UXDesignerResume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
     <div id="scroll-container">
-        <!-- <div class="sidebar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#cv">CV</a></li>
-            </ul>
-        </div> -->
         <div class="wrapper">
             <div class="content">
                 <h1>Appian Case Management</h1>
@@ -63,10 +66,30 @@
                     <img src="casemanagement/images/wireframes.png">
                 </div>
                 <h2>Final Designs</h2>
-                <div class="imgContainer">
-                    <img src="casemanagement/images/finaldesigns.png">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="casemanagement/images/image 5.png" alt="Image 1">
+                    </div>
+                    <div class="grid-item">
+                        <img src="casemanagement/images/image 6.png" alt="Image 2">
+                    </div>
+                    <div class="grid-item">
+                        <img src="casemanagement/images/image 7.png" alt="Image 3">
+                    </div>
+                    <div class="grid-item">
+                        <img src="casemanagement/images/image 8.png" alt="Image 4">
+                    </div>
+                    <div class="grid-item">
+                        <img src="casemanagement/images/image 9.png" alt="Image 5">
+                    </div>
+                    <div class="grid-item">
+                        <img src="casemanagement/images/image 10.png" alt="Image 6">
+                    </div>
                 </div>
-                <div class="dark-grey-box">
+                <!-- <div class="imgContainer">
+                    <img src="casemanagement/images/finaldesigns.png">
+                </div> -->
+                <!-- <div class="dark-grey-box">
                     <h2>Goal</h2>
                     <p id="goal-text">Our goal was to improve the platform's usability, ensuring that users could easily
                         navigate and comprehend the information presented to them.</p>
@@ -132,8 +155,8 @@
                     <div class="box-2" data-number="3">
                         <p><strong>Saved onboarding time</strong>: Rudimentary user testing indicates that our redesigned onboarding process can help users save time when setting up their Sequeer accounts and exploring the app's features.</p>
                     </div>
-                </div>
-                <div class="takeaways-container">
+                </div> -->
+                <!-- <div class="takeaways-container">
                     <div class="left-column">
                         <h1>Do more of...</h1>
                     </div>
@@ -147,7 +170,7 @@
                                 the introduction of a clear information hierarchy and intuitive navigation.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -167,14 +190,15 @@
 
             // Define animations for each section
             var tl = gsap.timeline();
+            
+            tl.from(".content h1", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".content p", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".three-column", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".content h2", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".content ul", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".imgContainer", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".dark-grey-box", { opacity: 0, y: 50, duration: 0.4 });
 
-            // tl.from(".content h1", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".content p", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".three-column", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".content h2", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".content ul", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".imgContainer", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".dark-grey-box", { opacity: 0, y: 50, duration: 0.5 });
 
             // Create a ScrollMagic scene
             new ScrollMagic.Scene({

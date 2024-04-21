@@ -20,7 +20,7 @@
             <img src="logoTransparent.png" alt="Your Logo">
         </a>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="JooaEunKim_UXDesignerResume.pdf" target="_blank">Resume</a></li>
         </ul>
@@ -30,26 +30,16 @@
             <div class="content">
                 <div class="top-container">
                     <div class="left-column">
-                        <h2>Hello, 안녕하세요!</h2>
-                        <h1>I'm Jane Kim.</h1>
+                        <img src="megif.gif">
                     </div>
                     <div class="right-column">
+                        <h2>Hello, 안녕하세요!</h2>
+                        <h1>I'm Jane Kim.</h1>
                         <p>I'm a UX Designer in Northern Virginia. With a background in both design and development, I bring a unique perspective to every project I work on, ensuring seamless collaboration for exceptional digital experiences.</p>
                         <div class="buttons">
                             <a href="https://www.linkedin.com/in/jooaeunkim618/" class="cta-button"
                                 target="_blank">Linkedin</a>
                             <a href="mailto:jk9ay@virginia.edu" class="cta-button">Contact</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-container">
-                    <div class="about-content">
-                        <div class="about-left-column">
-                            <h2>Nice to Meet You</h2>
-                            <h2>About Me</h2>
-                        </div>
-                        <div class="about-right-column">
-                            <img src="Untitled-2.png" alt="Your Image">
                         </div>
                     </div>
                 </div>
@@ -105,13 +95,9 @@
             // Define animations for each section
             var tl = gsap.timeline();
 
-            // tl.from(".content h1", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".content p", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".three-column", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".content h2", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".content ul", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".imgContainer", { opacity: 0, y: 50, duration: 0.5 })
-            //     .from(".dark-grey-box", { opacity: 0, y: 50, duration: 0.5 });
+            tl.from(".sticky-nav", { opacity: 0, y: 50, duration: 0.4 })
+            .from(".top-container", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".image-card", { opacity: 0, y: 50, duration: 0.4 })
 
             // Create a ScrollMagic scene
             new ScrollMagic.Scene({

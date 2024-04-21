@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F8F8F8;
-  color: #4A4A4B;
+  color: #2b2b2b;
 }
 
 .blur {
@@ -46,6 +46,11 @@ body {
   margin-left: 0;
 }
 
+.sticky-nav ul li a.active {
+  color: black; /* Color for active tab */
+  font-weight: bold; /* Bold font for active tab */
+}
+
 .sticky-nav ul li a {
   text-decoration: none;
   color: #989898;
@@ -66,7 +71,6 @@ body {
   height: auto; /* Maintain aspect ratio */
   margin-right: 20px;
 }
-
 
 #coded{
   font-size: 12px;
@@ -96,17 +100,30 @@ body {
 }
 
 .left-column {
-  flex: 1;
+  flex: 3;
+  margin-right: 40px;
 }
 
-.left-column h1{
-  font-size: 36px;
+.left-column img {
+  width: 100%; /* Use 100% to make the image fill the entire width of its container */
+  height: auto; /* Maintain the aspect ratio of the image */
 }
 
 .right-column {
-  flex: 2;
+  margin-top: 40px;
+  flex: 4;
   padding-left: 20px;
   line-height: 1.5;
+}
+
+.right-column h2{
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.right-column h1{
+  margin-top: 10px;
+  font-size: 36px;
 }
 
 .buttons {
@@ -203,7 +220,7 @@ body {
 }
 
 .sidebar ul li a {
-  color: #4A4A4B;
+  color: #2b2b2b;
   text-decoration: none; /* Remove underline from links */
   display: block; /* Display as block to fill the entire list item */
   padding: 10px 20px; /* Add padding for better clickability */
@@ -218,7 +235,6 @@ body {
 /* Adjust main content to avoid overlap with sidebar */
 .wrapper {
   display: flex; /* Use flexbox for layout */
-  
 
 }
 
