@@ -8,6 +8,66 @@ body {
   color: #4A4A4B;
 }
 
+.blur {
+  filter: blur(5px); /* Adjust the blur amount as needed */
+  transition: filter 0.3s; /* Add a smooth transition effect */
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+
+.sticky-nav .logo {
+  flex-grow: 1; /* Allow the logo to grow and take up remaining space */
+}
+
+.sticky-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: 80px; /* Add margin to the right of the links */
+}
+
+.sticky-nav ul li {
+  margin-left: 32px;
+}
+
+.sticky-nav ul li:first-child {
+  margin-left: 0;
+}
+
+.sticky-nav ul li a {
+  text-decoration: none;
+  color: #989898;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.sticky-nav ul li a:hover {
+  color: #333;
+}
+
+.logo{
+  margin-left: 40px;
+}
+
+.logo img {
+  max-width: 60px; /* Adjust the max-width of the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px;
+}
+
+
 #coded{
   font-size: 12px;
   text-align: center; 
@@ -154,20 +214,11 @@ body {
   color: #ccc;
 }
 
-/* Logo styles */
-.logo {
-  text-align: center; /* Center align the logo */
-  margin-bottom: 20px; /* Add space below the logo */
-}
-
-.logo img {
-  max-width: 100px; /* Set maximum width for the logo */
-  height: auto; /* Maintain aspect ratio */
-}
 
 /* Adjust main content to avoid overlap with sidebar */
 .wrapper {
   display: flex; /* Use flexbox for layout */
+  
 
 }
 
