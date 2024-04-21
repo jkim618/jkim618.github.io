@@ -129,22 +129,25 @@ body {
     margin-top: 20px;
   }
   
-  .button {
+  .cta-button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #4A90E2;
-    color: white;
+    padding: 10px 24px;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    color: black;
+    border: 1px solid black;
     text-decoration: none;
-    border-radius: 5px;
-    margin-right: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.15s ease-out; /* added transform with a shorter duration and easing */
+    margin-right: 12px;
   }
   
-  .button:hover {
-    background-color: #357EBD;
+  .cta-button:hover {
+    background-color: #8EC5FA;
+    box-shadow: 4px 4px 0px black;
+    transform: translateY(-4px) translateX(-4px);
   }
   
-
-
   
   /* Adjust main content to avoid overlap with sidebar */
   .wrapper {

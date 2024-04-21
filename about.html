@@ -38,8 +38,13 @@
                         <p>I'm an end-to-end designer who thrives on solving complex problems. I have a natural curiosity that drives me to connect with people and truly understand their needs. Brainstorming sessions is where I especially shine - I'm at my best when collaborating with others to create innovative solutions.</p>
                         <p>Previously, I was working on Case Management platform at Appian Corporation. Prior to that role, I engaged in a range of contract UX projects with ViaVia Corporation, Sequeer, and Terrascope. These projects spanned diverse industries, including fashion software, mobile search engines, and AI-driven real estate solutions, showcasing my versatility and adaptability in the field.</p>
                         <p>I'm always open to great opportunities. Please don't hesitate to reach out— I'm happy to chat about work or anything else!</p>
-
+                        <div class="buttons">
+                            <a href="https://www.linkedin.com/in/jooaeunkim618/" class="cta-button"
+                                target="_blank">Linkedin</a>
+                            <a href="mailto:jk9ay@virginia.edu" class="cta-button">Contact</a>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
 
@@ -53,9 +58,9 @@
             // Define animations for each section
             var tl = gsap.timeline();
 
-            // tl.from(".sticky-nav", { opacity: 0, y: 50, duration: 0.4 })
-            // .from(".top-container", { opacity: 0, y: 50, duration: 0.4 })
-            //     .from(".image-card", { opacity: 0, y: 50, duration: 0.4 })
+            tl.from(".sticky-nav", { opacity: 0, y: 50, duration: 0.4 })
+            .from(".left-column", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".right-column", { opacity: 0, y: 50, duration: 0.4 })
 
             // Create a ScrollMagic scene
             new ScrollMagic.Scene({
