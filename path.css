@@ -1,0 +1,214 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+    color: #4A4A4B;
+}
+
+
+.content {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+}
+
+h2 {
+    text-transform: uppercase; /* Convert text to uppercase */
+    color: #999; /* Light gray color */
+    letter-spacing: 2px; /* Increase letter spacing */
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+.light-grey-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.box {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    position: relative; /* Add position relative for pseudo-element positioning */
+}
+
+.box::before {
+    content: attr(data-number); /* Use data attribute for the number */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #646464;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: absolute;
+    top: -15px; /* Adjust top position to center vertically */
+    left: -15px; /* Adjust left position to center horizontally */
+}
+
+.box p {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.dark-grey-box {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark-grey-box h2 {
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.grey-box {
+    background-color: #f4f4f4;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #666;
+}
+
+.grey-box p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.grey-box strong {
+    color: white;
+}
+
+.grey-box:first-child {
+    margin-top: 10px;
+}
+
+
+.three-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.column {
+    background-color: #f9f9f9;
+    padding: 10px 20px; /* top/bottom right/left */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.column:hover {
+    transform: translateY(-5px); /* Add a slight lift effect on hover */
+}
+
+.column h2 {
+    margin-top: 0; 
+}
+
+.column p {
+    line-height: 1.5; /* Improve readability with proper line height */
+    color: #666; /* Use a slightly darker color for text */
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.imgContainer {
+    margin-top: 20px;
+}
+
+.imgContainer img {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.dark-grey-box {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.dark-grey-box h2 {
+    grid-column: 1 / span 2;
+}
+
+.dark-grey-box p {
+    grid-column: 1 / span 2;
+    color: #AAAAAA;
+}
+
+
+#goal-text{
+    color:white;
+    margin:0;
+}
+
+.light-grey-boxes-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.box-2 {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    position: relative; /* Add position relative for pseudo-element positioning */
+}
+.box-2 p{
+    font-size: 14px;
+}
+
+.box-2::before {
+    content: attr(data-number); /* Use data attribute for the number */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #646464;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: absolute;
+    top: -15px; /* Adjust top position to center vertically */
+    left: -15px; /* Adjust left position to center horizontally */
+}
