@@ -24,8 +24,15 @@
         </ul>
     </nav>
     <div id="scroll-container">
+        <div id="password-container">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password">
+            <button onclick="checkPassword()">Submit</button>
+            <p id="error" style="color: red; display: none;">Incorrect password. Please try again.</p>
+        </div>
         <div class="wrapper">
-            <div class="content">
+            
+            <div class="content" style="display: none;">
                 <h1>Path</h1>
                 <p>I led the design of the dashboard for the USI PATH platform, which serves as a central hub for
                     consolidating both external-facing sales presentations and internal tools for producers.</p>
@@ -211,6 +218,17 @@
                 .from(".dark-grey-box", { opacity: 0, y: 50, duration: 0.4 });
 
 
+                function checkPassword() {
+    const password = document.getElementById('password').value;
+    const correctPassword = 'casestudy1jk'; // Change this to your desired password
+
+    if (password === correctPassword) {
+        document.getElementById('password-container').style.display = 'none';
+        document.querySelector('.content').style.display = 'block';
+    } else {
+        document.getElementById('error').style.display = 'block';
+    }
+}
         </script>
 </body>
 
