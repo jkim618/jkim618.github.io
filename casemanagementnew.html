@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="casemanagementnew.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Case Study</title>
+</head>
+
+<body>
+    <nav class="sticky-nav">
+        <a class="logo" href="index.html">
+            <img src="logoTransparent.png" alt="Your Logo">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="JooaEunKim_UXDesignerResume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+    <div id="scroll-container">
+        <div class="wrapper">
+            <div class="content">
+                <h1>Appian Case Management</h1>
+                <p>I led the design of citizen portal landing page for Appian Constituent Case Management to enhance the user experience for citizens as well as creating the case creation process.</p>
+                <div class="three-column">
+                    <div class="column">
+                        <h2>Role</h2>
+                        <p>Sole UX Designer</p>
+                    </div>
+                    <div class="column">
+                        <h2>Duration</h2>
+                        <p>May 2022 - July 2022</p>
+                    </div>
+                    <div class="column">
+                        <h2>Team</h2>
+                        <p>Product Manager, Engineers, QA</p>
+                    </div>
+                </div>
+                <h2>Context</h2>
+                <p>Constituent Case Management involves handling cases related to citizens at the state and local government level. It includes the intake, processing, and recording of activities for cases, which can range from investigations to approvals. This workflow allows users to submit cases on behalf of citizens or for citizens to submit cases themselves.</p>
+                <h2>Problem</h2>
+                <p>Feedback from stakeholders and partners highlighted a key challenge: the current citizen-facing experience lacks clear guidance. Upon navigating to the agency's welcome page, citizens may not immediately recognize the need to 'create a case' and what that exactly entails. This lack of clarity results in users not having enough context to take appropriate actions. </p>
+                <div class="imgContainer">
+                    <img src="casemanagement/images/casebefore.png">
+                </div>
+                <h2>Final Solution</h2>
+                <p>The redesign aims to provide a more guided user experience with clearer context. It includes suggested case types with explanations, a search feature for quick case identification, helpful documentation and resources, and the ability for users to create an account and register.</p>
+                <div class="imgContainer">
+                    <img src="casemanagement/images/caseafter.png">
+                </div>
+                <h2>User Flow</h2>
+                <p>I developed a user flow illustrating how citizens can navigate the new portal to create and submit a case.</p>
+                <div class="imgContainer">
+                    <img src="casemanagement/images/flow.png">
+                </div>
+                <h2>Low Fidelity Wireframes</h2>
+                <p>
+                    In the initial stages of the redesign, low-fidelity wireframes were created to visualize the layout and structure of the new portal.</p>
+                <div class="imgContainer">
+                    <img src="casemanagement/images/wireframes.png">
+                </div>
+                <h2>Final Designs</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="casemanagement/images/image 5.png" alt="Image 1">
+                    </div>
+                    <div class="grid-item">
+                        <img src="casemanagement/images/image 6.png" alt="Image 2">
+                    </div>
+                    <div class="grid-item">
+                        <img src="casemanagement/images/image 7.png" alt="Image 3">
+                    </div>
+                    <div class="grid-item">
+                        <img src="casemanagement/images/image 8.png" alt="Image 4">
+                    </div>
+                    <div class="grid-item">
+                        <img src="casemanagement/images/image 9.png" alt="Image 5">
+                    </div>
+                    <div class="grid-item">
+                        <img src="casemanagement/images/image 10.png" alt="Image 6">
+                    </div>
+                </div>
+                <!-- <div class="imgContainer">
+                    <img src="casemanagement/images/finaldesigns.png">
+                </div> -->
+                <!-- <div class="dark-grey-box">
+                    <h2>Goal</h2>
+                    <p id="goal-text">Our goal was to improve the platform's usability, ensuring that users could easily
+                        navigate and comprehend the information presented to them.</p>
+                    <div class="grey-box">
+                        <p><strong>Enhance Navigation:</strong> Improve the platform's navigation to allow users to move
+                            between sections seamlessly and access features efficiently.</p>
+                    </div>
+                    <div class="grey-box">
+                        <p><strong>Clarify Information Hierarchy:</strong> Establish a clear and logical arrangement of
+                            content to help users easily find and understand relevant information.</p>
+                    </div>
+                    <div class="grey-box">
+                        <p><strong>Create a Cohesive User Flow:</strong> Develop a consistent and intuitive flow
+                            throughout the dashboard to guide users through their tasks and interactions smoothly.</p>
+                    </div>
+                    <div class="grey-box">
+                        <p><strong>Facilitate Data Exploration:</strong> Enable users to explore and analyze data
+                            effectively by providing robust filtering options, allowing them to refine their view and
+                            focus on specific information relevant to their needs.</p>
+                    </div>
+                </div>
+                <h2>Iterate, iterate, iterate</h2>
+                <p>I iterated on the dashboard's solution matrix to enhance the user experience.
+                    The current design features color-coded keys that improve
+                    information organization and efficiency. By optimizing text density in the table and its preview,
+                    the design makes effective use of UI real estate, ensuring a clean and concise presentation of data.
+                </p>
+                <div class="imgContainer">
+                    <img src="path/images/matrixiterations.png">
+                </div>
+                <h2>Development</h2>
+                <p>Below are detailed development notes to ensure the thorough execution of designs according to
+                    specifications. These notes provide clear explanations for implementing interactive elements,
+                    ensuring accurate execution of the design.</p>
+                <div class="imgContainer">
+                    <img src="path/images/devnotes1.png">
+                </div>
+                <div class="imgContainer">
+                    <img src="path/images/devnotes2.png">
+                </div>
+                <h2>Learnings and Impact</h2>
+                <div class="takeaways-container">
+                    <div class="left-column">
+                        <h1>Product Development Progress</h1>
+                    </div>
+                    <div class="right-column">
+                        <div>
+                            <h3>All producers and clients will experience the work I did.</h3>
+                            <p>The progress towards the launch of MVP 1.0 has been significant.
+                                It’s a huge privilege to get ownership of a project that so many people will see and
+                                experience once the product is launched.</p>
+                        </div>
+                    </div>
+                </div>
+                <h2>Outcomes</h2>
+                <div class="light-grey-boxes-2">
+                    <div class="box-2" data-number="1">
+                        <p><strong>Alignment with Business Objectives: </strong>The redesigned onboarding process is expected to influence the future direction of Sequeer, enhancing user control and security during app navigation and usage.</p>
+                    </div>
+                    <div class="box-2" data-number="2">
+                        <p><strong>Pivot direction based on research</strong>: Our research gave us confidence to propose to Sequeer a pivot from phone number signup to a more user-centric and flexible signup and login experience, providing greater choice and adaptability for users.</p>
+                    </div>
+                    <div class="box-2" data-number="3">
+                        <p><strong>Saved onboarding time</strong>: Rudimentary user testing indicates that our redesigned onboarding process can help users save time when setting up their Sequeer accounts and exploring the app's features.</p>
+                    </div>
+                </div> -->
+                <!-- <div class="takeaways-container">
+                    <div class="left-column">
+                        <h1>Do more of...</h1>
+                    </div>
+                    <div class="right-column">
+                        <div>
+                            <h3>Testing with users</h3>
+                            <p>
+                                Testing with users, while not conducted for this project, could have provided valuable
+                                insights into how producers and clients interact with the USI PATH platform.
+                                Specifically, user testing could have helped validate the redesign decisions, such as
+                                the introduction of a clear information hierarchy and intuitive navigation.</p>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+        <!-- <script>
+            function openTab(tabName) {
+                var i, tabs, content;
+                tabs = document.getElementsByClassName("tab");
+                content = document.getElementById("content");
+                for (i = 0; i < tabs.length; i++) {
+                    tabs[i].classList.remove("active");
+                }
+                document.querySelector(".tab[data-tab='" + tabName + "']").classList.add("active");
+                content.innerHTML = "<h1>" + tabName.charAt(0).toUpperCase() + tabName.slice(1) + "</h1><p>Case study content goes here...</p>";
+            }
+            // Initialize ScrollMagic controller
+            var controller = new ScrollMagic.Controller();
+
+            // Define animations for each section
+            var tl = gsap.timeline();
+            
+            tl.from(".content h1", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".content p", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".three-column", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".content h2", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".content ul", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".imgContainer", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".dark-grey-box", { opacity: 0, y: 50, duration: 0.4 });
+
+
+            // Create a ScrollMagic scene
+            new ScrollMagic.Scene({
+                triggerElement: "#scroll-container",
+                triggerHook: 0.5, // Trigger the animation halfway through the viewport
+                reverse: false, // Keep the animation active when scrolling up
+            })
+                .setTween(tl)
+                .addTo(controller);
+        </script> -->
+</body>
+
+</html>

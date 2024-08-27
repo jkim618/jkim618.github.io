@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="auto.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Case Study</title>
+</head>
+
+<body>
+    <nav class="sticky-nav">
+        <a class="logo" href="index.html">
+            <img src="logoTransparent.png" alt="Your Logo">
+        </a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="JooaEunKim_UXDesignerResume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+    <div id="scroll-container">
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="imgModal">
+        </div>
+        
+        <!-- <div id="password-container">
+            <form id="password-form" onsubmit="checkPassword(event)">
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Submit</button>
+                <p id="error" style="color: red; display: none;">Incorrect password. Please try again.</p>
+            </form>
+        </div> -->
+        <div class="wrapper">
+            <!-- <div class="content" style="display: none;"> -->
+                <div class="content">
+                    <div class="full-width-image-container">
+                        <img src="auto/images/thumb.png" class="full-width-image no-zoom">
+                    </div>
+                <h2>Overview</h2>
+                <div class="two-column">
+                    <div class="text-section">
+                        <p>The auto liability premium estimator is designed to provide accurate insurance premium calculations for various vehicle groupings, known as power unit groups. Each group is unique, defined by a multitude of factors that influence the premium rates. The goal of the design is to simplify the complex process of premium estimation, offering users a clear and intuitive tool to obtain precise cost assessments. </p>
+                        <p>I led the design of both the simple and detailed view of the auto calculator.</p>
+                    </div>
+                    <div class="text-section">
+                        <h3>Role</h3>
+                        <p>Lead UX Designer</p>
+                        <h3>Duration</h3>
+                        <p>June 2024 - Current</p>
+                        <h3>Team</h3>
+                        <p>Product Manager, Engineers</p>
+                    </div>
+                </div>
+                <h2>Problem</h2>
+                <p>After receiving the initial concept design from stakeholders, I identified critical issues:</p>
+                <ul>
+                    <p>1. The lack of integration between the calculator at the top and the table at the bottom makes it challenging to correlate inputs with their respective outputs. </p>
+                    <p>2. The lack of displayed values in the calculator makes it difficult to understand what goes into each factor.</p>
+                    <p>3. The horizontal scrolling required for the tables below leads to information overload, making it difficult to view and interpret the data effectively.</p>
+                </ul>
+                <p>These issues negatively impact the user experience by causing confusion, obstructing the logical flow, and making data interpretation difficult, leading to user frustration and inefficiency.</p>
+                <div class="image-section">
+                    <img src="auto/images/initialexcelreal.png" alt="Problem Image">
+                </div>
+                
+                <h2>Solution</h2>
+                <p>To address the issues identified, I implemented several key design changes:</p>
+                <ul>
+                    <p>1. Enhanced Calculator Interaction: I made the calculator interactive, enabling users to drill down into each factor to view the detailed inputs and understand how calculations are derived.</p>
+                    <p>2. Context-Specific Calculations: I replaced the aggregate calculator with context-specific calculators for each vehicle group, allowing users to view calculations relevant to individual groups.</p>
+                    <p>3. Enhanced Flow: I restructured the app to be 'vehicle-centric,' where users first add vehicles, which are then mapped to their locations. This simplifies the process by aligning vehicle data entry with location mapping, making it easier for users to navigate and understand relevant calculations.</p>
+                </ul>
+                <div class="autoFinalContainer">
+                    <img src="auto/images/Intial dialog1.png">
+                    <img src="auto/images/Dev/Main Summary Page - Expanded.png">
+                    <img src="auto/images/Add power unit group.png">
+                </div>
+
+                <h2>Initial Low Fidelity Iteration</h2>
+                <p>To initiate discussions with stakeholders, I developed 2 low-fidelity iterations. In the initial redesign, I made the top calculator interactive, enabling users to break down each factor and view details by zip code or location. This addressed the issue in the original Excel design, where the absence of visible values left users disconnected from the underlying factors. The redesign allows users to see how calculations are derived and understand location-specific impacts. Additionally, I revised the bottom table to be 'vehicle-centric,' where users add vehicles first, which are then mapped to locations. This approach better aligns with the tool’s focus on auto premiums, correcting the backward logic of the initial design. </p>
+                <div class="imgContainer">
+                    <img src="auto/images/lofis.png">
+                </div>
+
+                <h2>Research and Insight</h2>
+                <p>I met with stakeholders to review my low-fidelity wireframes, which received positive feedback, especially for the detailed breakdown of the calculator. However, they suggested enhancements and introduced new requirements:</p>
+                <ul>
+                    <p>1. Global inputs that impact the entire calculator, not just specific locations.</p>
+                    <p>2. Two versions of the calculator: Simple (based on state and operational area type) and Comprehensive (based on specific zip codes with additional inputs).</p>
+                    <p>3. A more context-specific calculator, allowing users to see calculations relevant to individual vehicle groups.</p>
+                </ul>
+
+                <h2>Back to Drawing Board</h2>
+                <p>Recognizing the app's lack of flow, I developed a user flow chart to address the updated requirements. Following a subsequent stakeholder meeting and Q&A session, it became clear that the primary persona for this app is the producer.</p>
+                <div class="image-section">
+                    <img src="auto/images/brainstorm.png" alt="Problem Image">
+                </div>
+
+                <h2>Problem 1: How to Effectively Onboard Users to the Calculator?</h2>
+                <p>The challenge was that the auto premium estimator lacked default values, which could leave users uncertain about where to begin. I needed to integrate global inputs that would influence the entire calculator while ensuring that users had sufficient context to understand its purpose. To address this, I devised two potential approaches. </p>
+                <div class="image-section">
+                    <img src="auto/images/globalinputs.png" alt="Problem Image">
+                </div>
+                <div class="problemContainer">
+                    <div class="problemColumn">
+                        <p><strong>Design Idea 1:</strong> Global inputs first, leading to an initial empty calculator view.</p>
+                        <p>Pros:</p>
+                        <ul>
+                            <li>Streamlines the initial setup, allowing users to quickly access the calculator without being overwhelmed by multiple steps.</li>
+                            <li>Encourages users to add power unit groups at their own pace.</li>
+                        </ul>
+                        <p>Cons:</p>
+                        <ul>
+                            <li>The empty view may cause confusion or frustration as it lacks immediate actionable content and may be visually unappealing to some.</li>
+                            <li>Requires users to take an extra step to add the first power unit group, which may interrupt the flow.</li>
+                        </ul>
+                    </div>
+                    <div class="problemColumn">
+                        <p><strong>Design Idea 2:</strong> Global inputs first, followed by adding an initial power unit group.</p>
+                        <p>Pros:</p>
+                        <ul>
+                            <li>Creates a more cohesive user experience by eliminating the empty view, providing immediate content upon entering the calculator.</li>
+                            <li>Guides users through the process step-by-step, reducing the chance of errors or confusion.</li>
+                            <li>Helps users understand the relevance of the inputs by immediately linking them to a specific power unit group.</li>
+                        </ul>
+                        <p>Cons:</p>
+                        <ul>
+                            <li>The added step of creating a power unit group before accessing the calculator can make the process feel longer.</li>
+                            <li>Could potentially overwhelm users who prefer to explore the calculator before committing to specific inputs.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2>Problem 2: How to Integrate Simple and Comprehensive Calculators Seamlessly?</h2>
+                <p>The challenge was reconciling the different ways power unit groups are mapped. The simple calculator categorizes groups broadly by state and operational area, while the comprehensive calculator breaks them down by specific zip codes, leading to more detailed classifications. For instance, a power unit group in Suburban Georgia might be a single group in the simple view but split into multiple groups in the comprehensive view. This complexity makes toggling between the two views difficult. I proposed two design options, each including warning modals to clarify the impact of switching calculators. </p>
+                <div class="image-section">
+                    <img src="auto/images/detailedsimple.png" alt="Problem Image">
+                </div>
+
+                <div class="problemContainer">
+                    <div class="problemColumn">
+                        <p><strong>Design Idea 1:</strong> Use a single modal to explain that switching from simple to comprehensive requires re-adding vehicle groups, as they don’t carry over, and that switching back and forth will not retain vehicle group data.</p>
+                        <p>Pros:</p>
+                        <ul>
+                            <li>Streamlines the user experience with a single, consolidated modal.</li>
+                            <li>Provides a comprehensive explanation of the switching process and data implications in one place.</li>
+                        </ul>
+                        <p>Cons:</p>
+                        <ul>
+                            <li>Risk of overwhelming users with too much information in one modal.</li>
+                            <li>May not fully capture the nuances of the experience.</li>
+                        </ul>
+                    </div>
+                    <div class="problemColumn">
+                        <p><strong>Design Idea 2:</strong> Use two modals: the first alerts users when they switch to the comprehensive view for the first time, noting that vehicle groups must be re-added. The second modal, which appears with each subsequent switch, reminds users that vehicle groups do not carry over.</p>
+                        <p>Pros:</p>
+                        <ul>
+                            <li>Provides clear, context-specific information at each stage of the experience.</li>
+                            <li>Allows users to acknowledge and dismiss reminders as needed.</li>
+                        </ul>
+                        <p>Cons:</p>
+                        <ul>
+                            <li>Involves managing multiple modals, which could be seen as intrusive.</li>
+                            <li>Users might find repeated reminders annoying if they don’t opt to disable them.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2>Problem 3: How to Provide Visibility into the Factors Used in Calculations?</h2>
+                <div class="two-column">
+                    <div class="image-section">
+                        <img src="auto/images/expandcollapse.png" alt="Problem Image">
+                    </div>
+                    <div class="text-section">
+                        <p>The initial Excel design lacked visibility into the calculation details, making it challenging for users to understand how values were derived. To address this, I introduced an expand/collapse feature in the design, allowing users to delve into each factor's components. This enhancement provides greater transparency and context, enabling users to better comprehend the calculations.</p>
+                    </div>
+                </div>
+
+                <h2>Design Decision 1: Guide the users early</h2>
+                <p>To address the limitations of relying solely on dropdowns for data selection, we implemented a dual
+                    approach. This includes a top-level filter using dropdowns and the introduction of navigation tabs.
+                    This enhancement provides users with more intuitive ways to filter and navigate through different
+                    datasets, improving overall usability and user experience. </p>
+                    <div class="autoFinalContainer">
+                        <img src="auto/images/Intial dialog1.png">
+                        <img src="auto/images/Initial dialog2.png">
+                        <img src="auto/images/Initial Dialog3.png">
+                    </div>
+
+                <h2>Development</h2>
+                <p>Below are detailed development notes to ensure the thorough execution of designs according to
+                    specifications. These notes provide clear explanations for implementing interactive elements,
+                    ensuring accurate execution of the design.</p>
+                <div class="imgContainer">
+                    <img src="auto/images/devnotes.png">
+                </div>
+                <!-- <h2>Outcomes</h2>
+                <div class="light-grey-boxes-2">
+                    <div class="box-2" data-number="1">
+                        <p><strong>Alignment with Business Objectives: </strong>The redesigned onboarding process is expected to influence the future direction of Sequeer, enhancing user control and security during app navigation and usage.</p>
+                    </div>
+                    <div class="box-2" data-number="2">
+                        <p><strong>Pivot direction based on research</strong>: Our research gave us confidence to propose to Sequeer a pivot from phone number signup to a more user-centric and flexible signup and login experience, providing greater choice and adaptability for users.</p>
+                    </div>
+                    <div class="box-2" data-number="3">
+                        <p><strong>Saved onboarding time</strong>: Rudimentary user testing indicates that our redesigned onboarding process can help users save time when setting up their Sequeer accounts and exploring the app's features.</p>
+                    </div>
+                </div> -->
+                <h2>Learnings and Impact</h2>
+                <div class="takeaways-container">
+                    <div class="left-column">
+                        <h1>Product Development Progress</h1>
+                    </div>
+                    <div class="right-column">
+                        <div>
+                            <h3>All producers and clients will experience the work I did.</h3>
+                            <p>The progress towards the launch of MVP 1.0 has been significant.
+                                It’s a huge privilege to get ownership of a project that so many people will see and
+                                experience once the product is launched.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="takeaways-container">
+                    <div class="left-column">
+                        <h1>Do more of...</h1>
+                    </div>
+                    <div class="right-column">
+                        <div>
+                            <h3>Testing with users</h3>
+                            <p>
+                                Testing with users, while not conducted for this project, could have provided valuable
+                                insights into how producers and clients interact with the USI PATH platform.
+                                Specifically, user testing could have helped validate the redesign decisions, such as
+                                the introduction of a clear information hierarchy and intuitive navigation.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("imgModal");
+var captionText = document.getElementById("caption");
+
+// Get all images on the page except those with the 'no-zoom' class
+var images = document.querySelectorAll("img:not(.no-zoom)");
+
+// Loop through all images and attach the click event
+images.forEach(function(img) {
+    img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Close the modal when clicking anywhere outside the image
+modal.onclick = function(event) {
+    if (event.target === modal || event.target === modalImg) {
+        modal.style.display = "none";
+    }
+}
+
+
+            function openTab(tabName) {
+                var i, tabs, content;
+                tabs = document.getElementsByClassName("tab");
+                content = document.getElementById("content");
+                for (i = 0; i < tabs.length; i++) {
+                    tabs[i].classList.remove("active");
+                }
+                document.querySelector(".tab[data-tab='" + tabName + "']").classList.add("active");
+                content.innerHTML = "<h1>" + tabName.charAt(0).toUpperCase() + tabName.slice(1) + "</h1><p>Case study content goes here...</p>";
+            }
+            // Initialize ScrollMagic controller
+            var controller = new ScrollMagic.Controller();
+
+            // Define animations for each section
+            var tl = gsap.timeline();
+
+            // tl.from(".content h1", { opacity: 0, y: 50, duration: 0.4 })
+            //     .from(".content p", { opacity: 0, y: 50, duration: 0.4 })
+            //     .from(".three-column", { opacity: 0, y: 50, duration: 0.4 })
+            //     .from(".content h2", { opacity: 0, y: 50, duration: 0.4 })
+            //     .from(".content ul", { opacity: 0, y: 50, duration: 0.4 })
+            //     .from(".imgContainer", { opacity: 0, y: 50, duration: 0.4 })
+            //     .from(".dark-grey-box", { opacity: 0, y: 50, duration: 0.4 });
+
+        //         function checkPassword(event) {
+        //     event.preventDefault(); // Prevent the default form submission
+        //     const passwordInput = document.getElementById('password');
+        //     const password = passwordInput.value;
+        //     const correctPassword = 'jkcasestudy1'; // Change this to your desired password
+
+        //     if (password === correctPassword) {
+        //         document.getElementById('password-container').style.display = 'none';
+        //         document.querySelector('.content').style.display = 'block';
+        //     } else {
+        //         document.getElementById('error').style.display = 'block';
+        //     }
+        //     passwordInput.value = ''; // Clear the input field
+        // }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="pathnew.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Case Study</title>
+</head>
+
+<body>
+    <nav class="sticky-nav">
+        <a class="logo" href="index.html">
+            <img src="logoTransparent.png" alt="Your Logo">
+        </a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="JooaEunKim_UXDesignerResume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+    <div id="scroll-container">
+        <div class="topImgContainer">
+            <img src="path/images/topthumbnail.png">
+        </div>
+        <div class="intro-container">
+            <div class="column left-column">
+                <h2>Role</h2>
+                <p>UX Design Lead</p>
+                <h2>Duration</h2>
+                <p>August 2023 - December 2023</p>
+                <h2>Team</h2>
+                <p>Product Manager, Engineers, 2 other Designers</p>
+            </div>
+            <div class="column right-column">
+                <h2>Context</h2>
+                <p>In the dynamic landscape of risk management and health and wellness, the USI PATH platform emerged as a game-changer, promising to Prevent, Abate, Uncover treasures, and improve Health for both employees and organizations.</p>
+                <p>I led the design of the dashboard for the USI PATH platform, which serves as a central hub for consolidating both external-facing sales presentations and internal tools for producers.</p>
+            </div>
+        </div>
+        <div class="problem-container">
+            <div class="box">
+                <div class="text">
+                    <h2>🫣 Problem </h2>
+                    <div class="tags">
+                        <span class="tag">Confusing UI Elements</span>
+                        <span class="tag">Poor Information Hierarchy</span>
+                    </div>
+                    <p>After receiving the initial concept design from stakeholders, our UX team identified critical issues:</p>
+                    <ul>
+                        <p>1. Unclear checkbox functionality hindered selection clarity.</p>
+                        <p>2. Duplicate dropdowns caused confusion by changing each other unintentionally.</p>
+                        <p>3. An overloaded two-column design lacked hierarchy, complicating key information retrieval.</p>
+                    </ul>
+                    <p>These issues resulted in <span id="problem">inadequate navigation, unclear information hierarchy, and a disjointed user flow</span>, significantly challenging users in comprehending and effectively navigating the platform.</p>
+                </div>
+                <div class="image">
+                    <img src="path/images/pathbefore_new.png" alt="Placeholder Image">
+                </div>
+            </div>
+        </div>
+        <div class="solution-container">
+            <div class="box">
+                <div class="text">
+                    <h2>✨ Solution </h2>
+                    <div class="tags">
+                        <span class="tag">Streamlined Navigation & Organization</span>
+                        <span class="tag">Data Filtering</span>
+                    </div>
+                    <p>To address the identified challenges, several enhancements were implemented:</p>
+                    <ul>
+                        <p>1. Global header and tabbed layouts to ensure consistent navigation and establish a clear information hierarchy.</p>
+                        <p>2. Prominent call-to-action button to clearly indicate navigation to a different section.</p>
+                        <p>3. Filter chips to facilitate efficient information filtering, enabling users to quickly refine and focus on relevant content.</p>
+                    </ul>
+            
+                </div>
+                <div class="image">
+                    <img src="path/images/pathafter_new.png" alt="Placeholder Image">
+                </div>
+            </div>
+        </div>
+        <div class="research">
+            <h2>🧪 Designing by Asking Users, Iterating by Listening</h2>
+            <p>Our team conducted several stakeholder meetings to gather crucial insights, shaping the redesign process to align with business objectives and user needs effectively.</p>
+            <div class="research-box-container">
+                <div class="research-box">
+                  <img src="icon1.png" alt="Icon 1">
+                  <p>Text for Box 1</p>
+                </div>
+                <div class="research-box">
+                  <img src="icon2.png" alt="Icon 2">
+                  <p>Text for Box 2</p>
+                </div>
+                <div class="research-box">
+                  <img src="icon3.png" alt="Icon 3">
+                  <p>Text for Box 3</p>
+                </div>
+              </div>
+        </div>
+        <!-- <div class="wrapper">
+                <div class="content">
+                <div container="imgContainer top">
+                    <img src="path/images/topthumbnail.png">
+                </div>
+                <h1>Path</h1>
+                <p>I led the design of the dashboard for the USI PATH platform, which serves as a central hub for
+                    consolidating both external-facing sales presentations and internal tools for producers.</p>
+                <div class="three-column">
+                    <div class="column">
+                        <h2>Role</h2>
+                        <p>Lead UX Designer</p>
+                    </div>
+                    <div class="column">
+                        <h2>Duration</h2>
+                        <p>August 2023 - December 2023</p>
+                    </div>
+                    <div class="column">
+                        <h2>Team</h2>
+                        <p>Product Manager, Engineers, 2 other Designers</p>
+                    </div>
+                </div>
+                <h2>Context</h2>
+                <p>In the dynamic landscape of risk management and health and wellness, the USI PATH platform emerged as a game-changer, promising to Prevent, Abate, Uncover treasures, and improve Health for both employees and organizations.</p>
+                <h2>Problem</h2>
+                <p>After receiving the initial concept design from stakeholders, our UX team identified critical issues. The design lacked intuitive navigation, a clear information hierarchy, and a cohesive user flow, posing challenges for users in comprehending and navigating the platform effectively.</p>
+                <div class="imgContainer">
+                    <img src="path/images/path before.png">
+                </div>
+                <h2>Final Solution</h2>
+                <p>The redesigned dashboard introduces a <strong>clear information hierarchy, intuitive navigation, and a cohesive user flow</strong>, enhancing the platform's usability. These improvements aim to provide a more
+                    streamlined and user-friendly experience for PATH platform users.</p>
+                <div class="imgContainer">
+                    <img src="path/images/path after.png">
+                </div>
+                <h2>Research and Insight</h2>
+                <p>Our team conducted several stakeholder meetings to gather crucial insights, shaping the redesign
+                    process to align with business objectives and user needs effectively. </p>
+                <div class="light-grey-boxes-2">
+                    <div class="box-2" data-number="1">
+                        <p><strong>
+                                Solution Matrix Graph Emphasis:</strong> Stakeholders highlighted the critical
+                            importance of the solution matrix graph as a key element for the platform.</p>
+                    </div>
+                    <div class="box-2" data-number="2">
+                        <p><strong>Incorporation of 5 Lines of Coverage:</strong> Stakeholders highlighted the
+                            requirement for incorporating 5 lines of coverage within a specific industry and
+                            subvertical.</p>
+                    </div>
+                    <div class="box-2" data-number="3">
+                        <p><strong>Favorites Feature:</strong> The business sought to implement a favorites feature that
+                            enables clients to save specific solutions and vendors for easy access and reference.</p>
+                    </div>
+                </div>
+                <div class="dark-grey-box">
+                    <h2>Goal</h2>
+                    <p id="goal-text">Our goal was to improve the platform's usability, ensuring that users could easily
+                        navigate and comprehend the information presented to them.</p>
+                    <div class="grey-box">
+                        <p><strong>Enhance Navigation:</strong> Improve the platform's navigation to allow users to move
+                            between sections seamlessly and access features efficiently.</p>
+                    </div>
+                    <div class="grey-box">
+                        <p><strong>Clarify Information Hierarchy:</strong> Establish a clear and logical arrangement of
+                            content to help users easily find and understand relevant information.</p>
+                    </div>
+                    <div class="grey-box">
+                        <p><strong>Create a Cohesive User Flow:</strong> Develop a consistent and intuitive flow
+                            throughout the dashboard to guide users through their tasks and interactions smoothly.</p>
+                    </div>
+                    <div class="grey-box">
+                        <p><strong>Facilitate Data Exploration:</strong> Enable users to explore and analyze data
+                            effectively by providing robust filtering options, allowing them to refine their view and
+                            focus on specific information relevant to their needs.</p>
+                    </div>
+                </div>
+                <h2>Iterate, iterate, iterate</h2>
+                <p>I iterated on the dashboard's solution matrix to enhance the user experience.
+                    The current design features color-coded keys that improve
+                    information organization and efficiency. By optimizing text density in the table and its preview, the design makes effective use of <strong>UI real estate</strong>, ensuring a clean and concise presentation of data.
+                </p>
+                <div class="imgContainer">
+                    <img src="path/images/matrixiterations.png">
+                </div>
+                <h2>Design Decision 1: Dropdowns and Navigation Tabs for Data Selection</h2>
+                <p>To address the limitations of relying solely on dropdowns for data selection, we implemented a dual
+                    approach. This includes a top-level filter using dropdowns and the introduction of navigation tabs.
+                    This enhancement provides users with more intuitive ways to filter and navigate through different
+                    datasets, improving overall usability and user experience. </p>
+                <div class="imgContainer">
+                    <img src="path/images/tabs.png">
+                </div>
+                <h2>Design Decision 2: Reorganizing Dashboard Sections for Improved Usability</h2>
+                <p>I separated the
+                    "Loss Impact" and "Solution Matrix" sections into distinct pages in my later iteration, enhancing
+                    user experience by
+                    reducing cognitive overload. Users can now effortlessly switch between sections using dedicated
+                    buttons, promoting a more intuitive and streamlined experience. This reorganization not only
+                    improved platform performance by reducing the amount of content loaded at once but also enhanced
+                    content organization.
+                </p>
+                <div class="imgContainer">
+                    <img src="path/images/challenge1.png">
+                </div>
+                <h2>Design Decision 3: Use of Filter Chips</h2>
+                <p>To provide users with more control over the displayed data, we implemented filter chips. These filter
+                    chips allow users to refine the displayed graph and table by selecting specific loss drivers.</p>
+                <div class="imgContainer">
+                    <img src="path/images/filters.png">
+                </div>
+                <h2>Development</h2>
+                <p>Below are detailed development notes to ensure the thorough execution of designs according to
+                    specifications. These notes provide clear explanations for implementing interactive elements,
+                    ensuring accurate execution of the design.</p>
+                <div class="imgContainer">
+                    <img src="path/images/devnotes1.png">
+                </div>
+                <div class="imgContainer">
+                    <img src="path/images/devnotes2.png">
+                </div>
+                <h2>Learnings and Impact</h2>
+                <div class="takeaways-container">
+                    <div class="left-column">
+                        <h1>Product Development Progress</h1>
+                    </div>
+                    <div class="right-column">
+                        <div>
+                            <h3>All producers and clients will experience the work I did.</h3>
+                            <p>The progress towards the launch of MVP 1.0 has been significant.
+                                It’s a huge privilege to get ownership of a project that so many people will see and
+                                experience once the product is launched.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="takeaways-container">
+                    <div class="left-column">
+                        <h1>Do more of...</h1>
+                    </div>
+                    <div class="right-column">
+                        <div>
+                            <h3>Testing with users</h3>
+                            <p>
+                                Testing with users, while not conducted for this project, could have provided valuable
+                                insights into how producers and clients interact with the USI PATH platform.
+                                Specifically, user testing could have helped validate the redesign decisions, such as
+                                the introduction of a clear information hierarchy and intuitive navigation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <script>
+            function openTab(tabName) {
+                var i, tabs, content;
+                tabs = document.getElementsByClassName("tab");
+                content = document.getElementById("content");
+                for (i = 0; i < tabs.length; i++) {
+                    tabs[i].classList.remove("active");
+                }
+                document.querySelector(".tab[data-tab='" + tabName + "']").classList.add("active");
+                content.innerHTML = "<h1>" + tabName.charAt(0).toUpperCase() + tabName.slice(1) + "</h1><p>Case study content goes here...</p>";
+            }
+            // // Initialize ScrollMagic controller
+            // var controller = new ScrollMagic.Controller();
+
+            // // Define animations for each section
+            // var tl = gsap.timeline();
+
+            // tl.from(".content h1", { opacity: 0, y: 50, duration: 0.4 })
+            //     .from(".content p", { opacity: 0, y: 50, duration: 0.4 })
+            //     .from(".three-column", { opacity: 0, y: 50, duration: 0.4 })
+            //     .from(".content h2", { opacity: 0, y: 50, duration: 0.4 })
+            //     .from(".content ul", { opacity: 0, y: 50, duration: 0.4 })
+            //     .from(".imgContainer", { opacity: 0, y: 50, duration: 0.4 })
+            //     .from(".dark-grey-box", { opacity: 0, y: 50, duration: 0.4 });
+
+        </script>
+</body>
+
+</html>

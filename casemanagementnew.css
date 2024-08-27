@@ -1,0 +1,64 @@
+body {
+    font-family: 'Inter', sans-serif; /* Use Inter font with fallback to sans-serif */
+    font-weight: 300; /* Use a lighter font weight */
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+    color: #4A4A4B;
+}
+
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  
+  .sticky-nav .logo {
+    flex-grow: 1; /* Allow the logo to grow and take up remaining space */
+  }
+  
+  .sticky-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 80px; /* Add margin to the right of the links */
+  }
+  
+  .sticky-nav ul li {
+    margin-left: 32px;
+  }
+  
+  .sticky-nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  .sticky-nav ul li a {
+    text-decoration: none;
+    color: #989898;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .sticky-nav ul li a:hover {
+    color: #333;
+  }
+  .logo{
+    margin-left: 40px;
+  }
+  
+  .logo img {
+    max-width: 60px; /* Adjust the max-width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+  }
+  
