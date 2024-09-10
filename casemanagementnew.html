@@ -18,107 +18,137 @@
             <img src="logoTransparent.png" alt="Your Logo">
         </a>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="JooaEunKim_UXDesignerResume.pdf" target="_blank">Resume</a></li>
         </ul>
     </nav>
     <div id="scroll-container">
+        <!-- <div id="password-container">
+            <form id="password-form" onsubmit="checkPassword(event)">
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Submit</button>
+                <p id="error" style="color: red; display: none;">Incorrect password. Please try again.</p>
+            </form>
+        </div> -->
         <div class="wrapper">
-            <div class="content">
-                <h1>Appian Case Management</h1>
-                <p>I led the design of citizen portal landing page for Appian Constituent Case Management to enhance the user experience for citizens as well as creating the case creation process.</p>
-                <div class="three-column">
-                    <div class="column">
-                        <h2>Role</h2>
+            <!-- <div class="content" style="display: none;"> -->
+                <div class="content">
+                    <div class="full-width-image-container">
+                        <img src="casemanagement/images/caseheader.png" class="full-width-image">
+                    </div>
+                <h2>Overview</h2>
+
+                <div class="two-column">
+                    <div class="text-section">
+                        <p>Constituent Case Management involves handling cases related to citizens at the state and local government level. It includes the intake, processing, and recording of activities for cases, which can range from investigations to approvals. This workflow allows users to submit cases on behalf of citizens or for citizens to submit cases themselves.</p>
+                        <p>I led the design of citizen portal landing page for Appian Constituent Case Management to enhance the user experience for citizens as well as creating the case creation process.</p>
+                    </div>
+                    <div class="text-section">
+                        <h3>Role</h3>
                         <p>Sole UX Designer</p>
-                    </div>
-                    <div class="column">
-                        <h2>Duration</h2>
-                        <p>May 2022 - July 2022</p>
-                    </div>
-                    <div class="column">
-                        <h2>Team</h2>
+                        <h3>Duration</h3>
+                        <p>June 2022 - August 2022</p>
+                        <h3>Team</h3>
                         <p>Product Manager, Engineers, QA</p>
                     </div>
                 </div>
-                <h2>Context</h2>
-                <p>Constituent Case Management involves handling cases related to citizens at the state and local government level. It includes the intake, processing, and recording of activities for cases, which can range from investigations to approvals. This workflow allows users to submit cases on behalf of citizens or for citizens to submit cases themselves.</p>
                 <h2>Problem</h2>
-                <p>Feedback from stakeholders and partners highlighted a key challenge: the current citizen-facing experience lacks clear guidance. Upon navigating to the agency's welcome page, citizens may not immediately recognize the need to 'create a case' and what that exactly entails. This lack of clarity results in users not having enough context to take appropriate actions. </p>
-                <div class="imgContainer">
-                    <img src="casemanagement/images/casebefore.png">
+                <div class="two-column">
+                    <div class="text-section">
+                        <p>Feedback from stakeholders and partners highlighted a key challenge: the current citizen-facing experience lacks clear guidance. Upon navigating to the agency's welcome page, citizens may not immediately recognize the need to 'create a case' and what that exactly entails. This lack of clarity results in users not having enough context to take appropriate actions.</p>
+                    </div>
+                    <div class="image-section">
+                        <img src="casemanagement/images/casemanagementbefore.png" alt="Problem Image">
+                    </div>
                 </div>
-                <h2>Final Solution</h2>
+                
+                <h2>Solution</h2>
                 <p>The redesign aims to provide a more guided user experience with clearer context. It includes suggested case types with explanations, a search feature for quick case identification, helpful documentation and resources, and the ability for users to create an account and register.</p>
                 <div class="imgContainer">
-                    <img src="casemanagement/images/caseafter.png">
-                </div>
-                <h2>User Flow</h2>
-                <p>I developed a user flow illustrating how citizens can navigate the new portal to create and submit a case.</p>
-                <div class="imgContainer">
-                    <img src="casemanagement/images/flow.png">
-                </div>
-                <h2>Low Fidelity Wireframes</h2>
-                <p>
-                    In the initial stages of the redesign, low-fidelity wireframes were created to visualize the layout and structure of the new portal.</p>
-                <div class="imgContainer">
-                    <img src="casemanagement/images/wireframes.png">
-                </div>
-                <h2>Final Designs</h2>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <img src="casemanagement/images/image 5.png" alt="Image 1">
-                    </div>
-                    <div class="grid-item">
-                        <img src="casemanagement/images/image 6.png" alt="Image 2">
-                    </div>
-                    <div class="grid-item">
-                        <img src="casemanagement/images/image 7.png" alt="Image 3">
-                    </div>
-                    <div class="grid-item">
-                        <img src="casemanagement/images/image 8.png" alt="Image 4">
-                    </div>
-                    <div class="grid-item">
-                        <img src="casemanagement/images/image 9.png" alt="Image 5">
-                    </div>
-                    <div class="grid-item">
-                        <img src="casemanagement/images/image 10.png" alt="Image 6">
-                    </div>
-                </div>
-                <!-- <div class="imgContainer">
                     <img src="casemanagement/images/finaldesigns.png">
+                </div>
+                <!-- <h2>Research and Insight</h2>
+                <p>Our team conducted stakeholder meetings to gather crucial insights, shaping the redesign process to align with business objectives and user needs effectively. </p>
+                <div class="research-box-container">
+                    <div class="research-box">
+                        <img src="path/images/icon1.png" alt="Icon 1">
+                        <p>"The solution matrix is pivotal to our platform, serving as its core attraction. Users interact and derive value from this tool."</p>
+                    </div>
+                    <div class="research-box">
+                        <img src="path/images/icon2.png" alt="Icon 2">
+                        <p>"Within a industry and subvertical, there are 5 distinct lines of coverage. This segmentation is essential for tailoring our solutions to meet specific client needs."</p>
+                    </div>
                 </div> -->
-                <!-- <div class="dark-grey-box">
-                    <h2>Goal</h2>
-                    <p id="goal-text">Our goal was to improve the platform's usability, ensuring that users could easily
-                        navigate and comprehend the information presented to them.</p>
-                    <div class="grey-box">
-                        <p><strong>Enhance Navigation:</strong> Improve the platform's navigation to allow users to move
-                            between sections seamlessly and access features efficiently.</p>
+
+                <h2>Design Goals</h2>
+                <p>Based on the user needs and stakeholder requirements, I summarized the higher level goals I hope to achieve with the redesign.</p>
+                <ul>
+                    <p>1. <strong>Enhance navigation: </strong> Improve the platform's navigation to allow users to move between sections seamlessly and access features efficiently.</p>
+                    <p>2. <strong>Clarify Information Hierarchy: </strong> Establish a clear and logical arrangement of
+                        content to help users easily find and understand relevant information.</p>
+                    <p>3. <strong>Create a Cohesive User Flow: </strong> Develop a consistent and intuitive flow
+                        throughout the dashboard to guide users through their tasks and interactions smoothly.</p>
+                    <p>4. <strong>Facilitate Data Exploration: </strong> Enable users to explore and analyze data
+                        effectively by providing robust filtering options, allowing them to refine their view and
+                        focus on specific information relevant to their needs.</p>
+
+                </ul>
+
+                <h2>Initial Wireframes</h2>
+                <div class="two-column">
+                    <div class="text-section">
+                        <p>Following a session with stakeholders, I quickly created a preliminary wireframe to initiate discussions. Although it was a rough draft, it effectively communicated my ideas and highlighted the potential advantages and drawbacks.</p>
+                        <p>Pros:</p>
+                        <ul class="pros">
+                            <p>1. <span class="highlight">Improved information hierarchy</span> with a top-down approach.</p>
+                            <p>2. Ability to <span class="highlight">filter information</span> based on loss drivers.</p>
+                            <p>3. <span class="highlight">Combined view</span> of the solution matrix graph and table, providing comprehensive data in one glance.</p>
+                        </ul>
+                        <p>Cons:</p>
+                        <ul class="cons">
+                            <p>1. Potential <span class="highlight">confusion from using two dropdowns</span> for vertical and subvertical.</p>
+                            <p>2. The solution matrix graph appears <span class="highlight">small and cramped</span>.</p>
+                        </ul>
+                        <p>Key takeaways were to make the vertical and subvertical elements more prominent, enlarge the solution matrix graph, and defer vendor information display.</p>
                     </div>
-                    <div class="grey-box">
-                        <p><strong>Clarify Information Hierarchy:</strong> Establish a clear and logical arrangement of
-                            content to help users easily find and understand relevant information.</p>
-                    </div>
-                    <div class="grey-box">
-                        <p><strong>Create a Cohesive User Flow:</strong> Develop a consistent and intuitive flow
-                            throughout the dashboard to guide users through their tasks and interactions smoothly.</p>
-                    </div>
-                    <div class="grey-box">
-                        <p><strong>Facilitate Data Exploration:</strong> Enable users to explore and analyze data
-                            effectively by providing robust filtering options, allowing them to refine their view and
-                            focus on specific information relevant to their needs.</p>
+                    <div class="image-section">
+                        <img src="path/images/uglywireframe.png" alt="Problem Image">
                     </div>
                 </div>
-                <h2>Iterate, iterate, iterate</h2>
-                <p>I iterated on the dashboard's solution matrix to enhance the user experience.
-                    The current design features color-coded keys that improve
-                    information organization and efficiency. By optimizing text density in the table and its preview,
-                    the design makes effective use of UI real estate, ensuring a clean and concise presentation of data.
+
+                <h2>Solution Matrix Iteration</h2>
+                <p>After receiving feedback from stakeholders, I created improved wireframes. I enlarged the solution matrix and replaced the vendor preview with a 'Compare Top Vendors' text link, using the freed space for solution information preview. However, both iterations had issues with the lengthy loss drivers column, even when using an expand-collapse format. To address this, I iterated again, turning the loss drivers into <span class="highlight">colored keys</span>.</p>
+
+                <div class="imgContainer">
+                    <img src="path/images/iterations.png">
+                </div>
+                <h2>Design Decision 1: Dropdowns and Navigation Tabs for Data Selection</h2>
+                <p>To address the limitations of relying solely on dropdowns for data selection, we implemented a dual
+                    approach. This includes a top-level filter using <span class="highlight">dropdowns</span> and the introduction of <span class="highlight">navigation tabs</span>.
+                    This enhancement provides users with more intuitive ways to filter and navigate through different
+                    datasets, improving overall usability and user experience. </p>
+                <div class="imgContainer">
+                    <img src="path/images/tabs.png">
+                </div>
+                <h2>Design Decision 2: Reorganizing Dashboard Sections for Improved Usability</h2>
+                <p>I separated the
+                    "Loss Impact" and "Solution Matrix" sections into <span class="highlight">distinct pages</span> in my later iteration, enhancing
+                    user experience by
+                    reducing cognitive overload. Users can now effortlessly switch between sections using dedicated
+                    buttons, promoting a more intuitive and streamlined experience. This reorganization not only
+                    improved platform performance by reducing the amount of content loaded at once but also enhanced
+                    content organization.
                 </p>
                 <div class="imgContainer">
-                    <img src="path/images/matrixiterations.png">
+                    <img src="path/images/challenge1.png">
+                </div>
+                <h2>Design Decision 3: Use of Filter Chips</h2>
+                <p>To provide users with more control over the displayed data, we implemented <span class="highlight">filter chips</span>. These filter
+                    chips allow users to refine the displayed graph and table by selecting specific loss drivers.</p>
+                <div class="imgContainer">
+                    <img src="path/images/filters.png">
                 </div>
                 <h2>Development</h2>
                 <p>Below are detailed development notes to ensure the thorough execution of designs according to
@@ -130,6 +160,18 @@
                 <div class="imgContainer">
                     <img src="path/images/devnotes2.png">
                 </div>
+                <!-- <h2>Outcomes</h2>
+                <div class="light-grey-boxes-2">
+                    <div class="box-2" data-number="1">
+                        <p><strong>Alignment with Business Objectives: </strong>The redesigned onboarding process is expected to influence the future direction of Sequeer, enhancing user control and security during app navigation and usage.</p>
+                    </div>
+                    <div class="box-2" data-number="2">
+                        <p><strong>Pivot direction based on research</strong>: Our research gave us confidence to propose to Sequeer a pivot from phone number signup to a more user-centric and flexible signup and login experience, providing greater choice and adaptability for users.</p>
+                    </div>
+                    <div class="box-2" data-number="3">
+                        <p><strong>Saved onboarding time</strong>: Rudimentary user testing indicates that our redesigned onboarding process can help users save time when setting up their Sequeer accounts and exploring the app's features.</p>
+                    </div>
+                </div> -->
                 <h2>Learnings and Impact</h2>
                 <div class="takeaways-container">
                     <div class="left-column">
@@ -144,19 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <h2>Outcomes</h2>
-                <div class="light-grey-boxes-2">
-                    <div class="box-2" data-number="1">
-                        <p><strong>Alignment with Business Objectives: </strong>The redesigned onboarding process is expected to influence the future direction of Sequeer, enhancing user control and security during app navigation and usage.</p>
-                    </div>
-                    <div class="box-2" data-number="2">
-                        <p><strong>Pivot direction based on research</strong>: Our research gave us confidence to propose to Sequeer a pivot from phone number signup to a more user-centric and flexible signup and login experience, providing greater choice and adaptability for users.</p>
-                    </div>
-                    <div class="box-2" data-number="3">
-                        <p><strong>Saved onboarding time</strong>: Rudimentary user testing indicates that our redesigned onboarding process can help users save time when setting up their Sequeer accounts and exploring the app's features.</p>
-                    </div>
-                </div> -->
-                <!-- <div class="takeaways-container">
+                <div class="takeaways-container">
                     <div class="left-column">
                         <h1>Do more of...</h1>
                     </div>
@@ -170,45 +200,26 @@
                                 the introduction of a clear information hierarchy and intuitive navigation.</p>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
             </div>
         </div>
-        <!-- <script>
-            function openTab(tabName) {
-                var i, tabs, content;
-                tabs = document.getElementsByClassName("tab");
-                content = document.getElementById("content");
-                for (i = 0; i < tabs.length; i++) {
-                    tabs[i].classList.remove("active");
-                }
-                document.querySelector(".tab[data-tab='" + tabName + "']").classList.add("active");
-                content.innerHTML = "<h1>" + tabName.charAt(0).toUpperCase() + tabName.slice(1) + "</h1><p>Case study content goes here...</p>";
-            }
-            // Initialize ScrollMagic controller
-            var controller = new ScrollMagic.Controller();
+        <script>
+        //         function checkPassword(event) {
+        //     event.preventDefault(); // Prevent the default form submission
+        //     const passwordInput = document.getElementById('password');
+        //     const password = passwordInput.value;
+        //     const correctPassword = 'jkcasestudy1'; // Change this to your desired password
 
-            // Define animations for each section
-            var tl = gsap.timeline();
-            
-            tl.from(".content h1", { opacity: 0, y: 50, duration: 0.4 })
-                .from(".content p", { opacity: 0, y: 50, duration: 0.4 })
-                .from(".three-column", { opacity: 0, y: 50, duration: 0.4 })
-                .from(".content h2", { opacity: 0, y: 50, duration: 0.4 })
-                .from(".content ul", { opacity: 0, y: 50, duration: 0.4 })
-                .from(".imgContainer", { opacity: 0, y: 50, duration: 0.4 })
-                .from(".dark-grey-box", { opacity: 0, y: 50, duration: 0.4 });
-
-
-            // Create a ScrollMagic scene
-            new ScrollMagic.Scene({
-                triggerElement: "#scroll-container",
-                triggerHook: 0.5, // Trigger the animation halfway through the viewport
-                reverse: false, // Keep the animation active when scrolling up
-            })
-                .setTween(tl)
-                .addTo(controller);
-        </script> -->
+        //     if (password === correctPassword) {
+        //         document.getElementById('password-container').style.display = 'none';
+        //         document.querySelector('.content').style.display = 'block';
+        //     } else {
+        //         document.getElementById('error').style.display = 'block';
+        //     }
+        //     passwordInput.value = ''; // Clear the input field
+        // }
+        </script>
 </body>
 
 </html>

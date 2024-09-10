@@ -1,6 +1,5 @@
 body {
-    font-family: 'Inter', sans-serif; /* Use Inter font with fallback to sans-serif */
-    font-weight: 300; /* Use a lighter font weight */
+    font-family: 'Satoshi', sans-serif;
     letter-spacing: -0.2px;
     margin: 0;
     padding: 0;
@@ -62,21 +61,6 @@ body {
   }
   
 
-  .full-width-image-container {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-}
-
-.full-width-image {
-    width: 100%;
-    height: auto;
-}
-
-
 /* Adjust main content to avoid overlap with sidebar */
 .wrapper {
     display: flex; /* Use flexbox for layout */
@@ -89,7 +73,38 @@ body {
     margin-left: auto; /* Auto margin on left side */
     margin-right: auto; /* Auto margin on right side */
     max-width: 1000px; /* Set maximum width for the content */
-    margin-top: 60px;
+}
+
+.overview-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.overview-column {
+    flex: 1;
+    margin-right: 32px;
+}
+
+
+.problem-container {
+    display: flex;
+    justify-content: space-between; /* Ensure equal space between the boxes */
+    flex-wrap: nowrap; 
+}
+
+.problem-box {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 15px; /* Increase the margin for more space between the boxes */
+    flex-basis: 30%; /* Each box will take up 30% of the container width */
+    flex-grow: 1; /* Allow the boxes to grow to fill the available space */
+    border-radius: 8px;
+}
+
+.problem-box h3{
+    margin-top:0;
 }
 
 #password-container {
@@ -138,22 +153,25 @@ body {
 
 h1 {
     color: #333;
-    font-size: 2em;
+    font-size: 42px;
 }
 
 h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #3D3D3D;
+}
 
-    color: #555555; /* Light gray color */
-    letter-spacing: 1.5px; /* Increase letter spacing */
-    font-size: 20px;
+h3 {
+    font-size: 24px;
     font-weight: normal;
-    margin-top: 40px;
-    font-weight:bold;
+    color: gray;
 }
 
 p {
     line-height: 1.7;
-    font-size: 16px;
+    font-size: 18px;
+    color: #3D3D3D;
 }
 
 .highlight{
@@ -225,6 +243,28 @@ p {
     max-width: 100%;
     height: auto;
 }
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .nav-item {
+    text-align: center; /* Centers the text under each image */
+    width: 800px; /* Adjust to control the width of the image and text */
+  }
+
+  .nav-item img {
+    width: 100%; /* Image will take up the full width of the container */
+    height: auto;
+  }
+
+  .nav-item p {
+    text-align: left; /* Text is now left-aligned */
+  }
+  .nav-item h3{
+    text-align: left;
+  }
 
 .dark-grey-box {
     background-color: #333;
