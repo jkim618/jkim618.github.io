@@ -72,7 +72,7 @@ body {
     padding: 20px; /* Add padding to top and bottom */
     margin-left: auto; /* Auto margin on left side */
     margin-right: auto; /* Auto margin on right side */
-    max-width: 900px; /* Set maximum width for the content */
+    max-width: 1000px; /* Set maximum width for the content */
 }
 
 .overview-container {
