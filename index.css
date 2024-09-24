@@ -25,6 +25,9 @@ body {
   padding: 10px 20px;
 }
 
+p{
+  font-size: 18px;
+}
 
 .sticky-nav .logo {
   flex-grow: 1; /* Allow the logo to grow and take up remaining space */
@@ -118,12 +121,13 @@ body {
 
 .right-column h2{
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .right-column h1{
   margin-top: 10px;
   font-size: 36px;
+  font-weight: 600;
 }
 
 .buttons {
@@ -144,6 +148,26 @@ body {
   background-color: #357EBD;
 }
 
+
+.portfolio-container {
+  display: grid; /* Using grid for layout */
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  grid-gap: 20px; /* Gap between the items */
+  max-width: 100vw; /* Full width */
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
+}
 
 .about-container {
   display: flex;
@@ -198,65 +222,6 @@ body {
   margin-top: 60px;
 }
 
-.image-card {
-  display: flex;
-  align-items: center; /* Vertically center align the items */
-  margin-bottom: 20px;
-}
-
-.image-container {
-  position: relative;
-}
-
-.image-container img {
-  width: 700px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s;
-}
-
-.image-container:hover img {
-  transform: scale(1.03);
-}
-
-.overlay {
-  position: absolute;
-  transform: scale(1.03);
-  top: 0;
-  left: 0;
-  width: 100%; /* Cover the entire image width */
-  height: 100%; /* Cover the entire image height */
-  background-color: rgba(255, 255, 255, 0.5);
-  color: black;
-  display: none; /* Hide the overlay by default */
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.2s;
-  border-radius: 8px; /* Match the border-radius of the image */
-}
-
-.image-container:hover .overlay {
-  display: flex; /* Show the overlay on hover */
-  opacity: 1;
-}
-
-.card-content {
-  padding: 20px 0 20px 40px;
-}
-
-.card-content h3 {
-  margin: 0;
-  font-size: 1.5em;
-}
-
-.card-content p {
-  color: #666;
-  font-size: 16px;
-  margin-top: 12px;
-  line-height: 1.5;
-}
 
 .cta-button {
   display: inline-block;
@@ -276,4 +241,5 @@ body {
   box-shadow: 4px 4px 0px black;
   transform: translateY(-4px) translateX(-4px);
 }
+
 

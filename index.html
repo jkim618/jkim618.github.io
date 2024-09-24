@@ -8,7 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UX Case Study</title>
@@ -34,7 +34,7 @@
                     </div>
                     <div class="right-column">
                         <h2>Hello, 안녕하세요!</h2>
-                        <h1>I'm Jane (Jooa Eun) Kim.</h1>
+                        <h1>I'm Jane Kim.</h1>
                         <p>I'm a UX Designer in Northern Virginia. With a background in both design and development, I bring a unique perspective to every project I work on, ensuring seamless collaboration for exceptional digital experiences.</p>
                         <div class="buttons">
                             <a href="https://www.linkedin.com/in/jooaeunkim618/" class="cta-button"
@@ -43,52 +43,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="image-card">
-                    <div class="image-container">
+                <div class="portfolio-container">
+                    <div class="portfolio-item">
                         <a href="pathdashboard.html">
-                            <img src="path/images/path_thumb.png" alt="Case Study 1">
-                            <div class="overlay">Path</div>
+                            <img src="path/images/paththumbnaillong.png" alt="Item 1">
                         </a>
-                    </div>
-                    <div class="card-content">
-                        <h3>Path</h3>
+                        <h2>USI Path</h2>
                         <p>An insurance risk control platform maximizing savings and minimizing loss impact through tailored solutions</p>
-                        <a href="pathdashboard.html" class="cta-button">View More</a>
                     </div>
-                </div>
-                <div class="image-card">
-                    <div class="image-container">
+                    <div class="portfolio-item">
                         <a href="sequeerfull.html">
-                            <img src="sequeernew/images/thumb2.png" alt="Case Study 1">
-                            <div class="overlay">Sequeer</div>
+                            <img src="sequeer/sequeerthumbnew.png" alt="Item 2">
                         </a>
-                    </div>
-                    <div class="card-content">
-                        <h3>Sequeer</h3>
+                        <h2>Sequeer</h2>
                         <p>A B2C mobile app that serves as a comprehensive global search engine for the LGBTQ community</p>
-                        <a href="sequeernew.html" class="cta-button">View More</a>
                     </div>
-                </div>
-                <div class="image-card">
-                    <div class="image-container">
+                    <div class="portfolio-item">
                         <a href="casemanagement.html">
-                            <img src="casemanagement/images/casethumb.png" alt="Case Study 1">
-                            <div class="overlay">Appian Case Management</div>
+                            <img src="casemanagement/images/casethumbnew.png" alt="Item 3">
                         </a>
-                    </div>
-                    <div class="card-content">
-                        <h3>Appian Case Management</h3>
+                        <h2>Appian Case Management</h2>
                         <p>SaaS product for submitting and managing cases at local and state government level</p>
-                        <a href="casemanagement.html" class="cta-button">View More</a>
                     </div>
                 </div>
+
                 <p id="coded">Coded in HTML, CSS, and Javascript with love :)</p>
             </div>
-
         </div>
+        
         <script>
-
-
             // Initialize ScrollMagic controller
             var controller = new ScrollMagic.Controller();
 
@@ -97,7 +80,7 @@
 
             tl.from(".sticky-nav", { opacity: 0, y: 50, duration: 0.4 })
             .from(".top-container", { opacity: 0, y: 50, duration: 0.4 })
-                .from(".image-card", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".portfolio-container", { opacity: 0, y: 50, duration: 0.4 })
 
             // Create a ScrollMagic scene
             new ScrollMagic.Scene({

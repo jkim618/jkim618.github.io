@@ -58,39 +58,23 @@
                 </div>
                 <div class="problem">
                     <h2>Problem</h2>
-                    <p>The challenge was to simplify complex and costly risk control strategies for organizations through PATH, addressing gaps in existing risk management programs. The platform needed to consolidate external-facing sales presentations with internal tools for producers, streamlining both aspects into a cohesive solution.</p>
-                    <p>The existing concept design that the stakeholders provided had several critical issues.</p>
+                    <p>The tool is designed to calculate insurance premiums for different vehicle categories, known as power units, and is tailored for insurance producers. However, the current tool presents several user experience challenges:
+                    </p>
+                    <p>1. <b>Disconnected Inputs</b>: Users struggled to see how their inputs affected the table data, causing confusion and disrupting workflow.</p>
+                    <p>2. <b>Low Input Visibility</b>: The input fields were unclear, making it difficult for users to understand how their entries influenced the premium estimates.</p>
+                    <p>3. <b>Cluttered Layout</b>: The table required excessive horizontal scrolling, leading to information overload and making it hard for users to efficiently view and interpret the data.
+                    </p>
                     <div class="imgContainer">
                         <img src="auto/images/initialexcelreal.png">
                     </div>
 
                 </div>
-                <div class="imgContainer">
-                    <img src="path/images/HMW.png">
-                </div>
                 <div class="solution-container">
                     <h2>Solution</h2>
-                    <p>I enhanced the platform's usability by streamlining navigation and making it easier for users to find relevant information efficiently.</p>
+                    <p>To resolve these usability issues, I redesigned the tool with a more intuitive and user-friendly experience. The calculator was made interactive, providing real-time feedback as users adjusted inputs, allowing them to clearly understand how premiums were calculated. I also introduced specialized calculators for each vehicle category, reducing cognitive load and improving data interpretation.</p>
+                    <p>Furthermore, I restructured the workflow to be vehicle-centric. Instead of the initial, counterintuitive process of adding locations first, users now begin by adding vehicle groups, followed by mapping them to locations. This logical progression simplified navigation and made the tool more aligned with user expectations.</p>
                     <div class="imgContainer">
-                        <img src="path/images/path after.png">
-                    </div>
-                </div>
-                <div class="research">
-                    <h2>Research and Insight</h2>
-                    <p>Stakeholder interviews provided crucial insights that helped align the redesign with both business objectives and user needs, leading to a clear summary of key goals. </p>
-                    <div class="problem-container">
-                        <div class="problem-box">
-                            <h3>01. Customization and Personalization</h3>
-                            <p>The platform needs customization based on industry and company size.</p>
-                        </div>
-                        <div class="problem-box">
-                            <h3>02. Coverage Segmentation</h3>
-                            <p>Five distinct lines of coverage are essential for tailored solutions.</p>
-                        </div>
-                        <div class="problem-box">
-                            <h3>03. Solution Matrix</h3>
-                            <p> The solution matrix is a central, high-value feature of the platform.</p>
-                        </div>
+                        <img src="auto/images/autofinal.png">
                     </div>
                 </div>
                 <!-- <div class="research-box-container">
@@ -108,10 +92,35 @@
                     </div>
                 </div> -->
                 <div class="wireframes">
-                    <h2>Initial Wireframes</h2>
-                    <p>Following a stakeholder session, I quickly created a preliminary wireframe to initiate discussions. This rough draft effectively communicated my ideas and highlighted potential advantages and drawbacks. In a subsequent workshop, stakeholders confirmed that the vendor preview was unnecessary and expressed a preference for a more prominent solution matrix. They appreciated the comprehensive list of loss drivers, as it allowed them to easily compare all solutions at once.</p>
+                    <h2>Initial Ideas</h2>
+                    <p>To engage stakeholders, I developed two low-fidelity iterations addressing key usability issues. Both versions prioritized interactivity, allowing users to break down each factor and view details by zip code or location. This enhancement clarified how different inputs influenced calculations, improving user comprehension of location-specific impacts.</p>
+
+                    <p>I also restructured the table to be vehicle-centric, enabling users to add vehicles first before mapping them to locations. This change aligned with the tool’s focus on auto premiums and corrected the previous design’s flawed logic.</p>
                     <div class="imgContainer">
-                        <img src="path/images/initialwireframe.png">
+                        <img src="auto/images/autolofis.png">
+                    </div>
+                </div>
+                <div class="research">
+                    <h2>Research and Insight</h2>
+                    <p>I presented the initial ideas and low-fidelity wireframes to the stakeholders, who responded positively, particularly valuing the detailed breakdown of the calculator. They did, however, provide additional requirements that necessitated further refinement of the design.</p>
+                    <p>Key new requirements included integrating global inputs and creating context-specific calculations for individual vehicle groups. I returned to the drawing board to incorporate their feedback and enhance the design accordingly.</p>
+                    <div class="problem-container">
+                        <div class="problem-box">
+                            <h3>01. Global Inputs</h3>
+                            <p>Integrate inputs affecting the entire calculator, not just specific locations.</p>
+                        </div>
+                        <div class="problem-box">
+                            <h3>02. Context-Specific Calculations</h3>
+                            <p>Develop a calculator that displays relevant calculations for individual vehicle groups.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flow">
+                    <h2>User Workflow</h2>
+                    <p>I developed a comprehensive user flow to address the new requirements and lay a strong foundation for the design. This flow captures all essential elements and guides the implementation of the new features. To finalize it, I facilitated a workshop with stakeholders, allowing us to collaboratively review and refine the user flow.
+                    </p>
+                    <div class="imgContainer">
+                        <img src="auto/images/flow.png">
                     </div>
                 </div>
 
