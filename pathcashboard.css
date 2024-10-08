@@ -72,12 +72,13 @@ body {
     padding: 20px; /* Add padding to top and bottom */
     margin-left: auto; /* Auto margin on left side */
     margin-right: auto; /* Auto margin on right side */
-    max-width: 900px; /* Set maximum width for the content */
+    max-width: 1000px; /* Set maximum width for the content */
 }
 
 .overview-container {
     display: flex;
     justify-content: space-between;
+    margin-top: -10px;
 
 }
 
@@ -167,6 +168,25 @@ h3 {
     font-weight: normal;
     color: gray;
 }
+
+h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: #02198b;
+    margin-top: 48px;
+    margin-bottom: 8px;
+}
+
+.stacked-headings h2 {
+    margin-top: 0; /* This only affects h4 when it comes right after an h2 inside .heading-stack */
+}
+
+.stacked-headings h4 {
+    margin-bottom: 16px; /* This only affects h4 when it comes right after an h2 inside .heading-stack */
+    margin-top: 64px;
+}
+
+
 
 p {
     line-height: 1.7;
@@ -302,40 +322,6 @@ p {
 .grey-box:first-child {
     margin-top: 10px;
 }
-
-.research-box-container {
-    display: flex;
-    justify-content: center;
-    padding: 0 20px; /* Adjust padding as needed */
-    margin-bottom: 20px;
-}
-
-.research-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 28%; /* Adjust the width to make the boxes skinnier */
-    padding: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
-    background-color: #f9f9f9;
-    text-align: left;
-    margin: 0 10px; /* Adjust for spacing between the two boxes */
-    position: relative;
-}
-
-.research-box img {
-    display: block; /* Remove inline spacing */
-    width: 125px; /* Adjust the size as needed */
-    object-fit: contain;
-}
-
-.research-box p {
-    margin-top: -8px;
-    font-size: 16px;
-    color: #4A4A4B;
-}
-
 
 
 .three-column {
