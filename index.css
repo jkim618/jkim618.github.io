@@ -1,5 +1,5 @@
 body {
-  font-family: 'Inter', sans-serif; /* Use Inter font with fallback to sans-serif */
+  font-family: 'DM Sans', sans-serif; /* Use Inter font with fallback to sans-serif */
   font-weight: 300; /* Use a lighter font weight */
   letter-spacing: -0.2px;
   margin: 0;
@@ -8,9 +8,11 @@ body {
   color: #2b2b2b;
 }
 
-.blur {
-  filter: blur(5px); /* Adjust the blur amount as needed */
-  transition: filter 0.3s; /* Add a smooth transition effect */
+p{
+  font-size: 18px;
+  font-weight: 400; /* Regular weight */
+  letter-spacing: 0.2px; /* Slightly increase spacing */
+  line-height: 1.75; /* Adjust for better readability */
 }
 
 .sticky-nav {
@@ -23,10 +25,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-}
-
-p{
-  font-size: 18px;
 }
 
 .sticky-nav .logo {
@@ -81,21 +79,52 @@ p{
   margin-top: 60px;
 }
 
-.sidebar {
-  height: 100vh; /* Full height of the viewport */
-  width: 230px; /* Width of the sidebar */
-  position: fixed; /* Fixed position so it stays visible while scrolling */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
-  padding: 10px; /* Add padding to create space between the stroke and content */
-  background-color: transparent; /* Set the background color to transparent */
-  padding-top: 20px; /* Add some space at the top */
-  z-index: 1000; /* Ensure sidebar appears above other content */
-  overflow-y: auto; /* Allow sidebar to be scrollable if content exceeds height */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+.intro-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Full viewport height */
+  overflow: hidden;
+  background-color: #f8f8f8; /* Fallback background color */
 }
 
-.top-container {
+.blurry-bg {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  background: radial-gradient(circle, #734fc8, #fbc2eb, #6591ff, #ffffff);
+  filter: blur(80px); /* Bigger blur effect */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  animation: rotate 20s infinite linear; /* Optional subtle animation */
+}
+
+.intro-text {
+  position: relative;
+  z-index: 2; /* Place text above the blurry background */
+  color: #2b2b2b;
+}
+
+.intro-text h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.highlight {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #984ae2; /* Color of the underline */
+  text-decoration-thickness: 2px; /* Thickness of the underline */
+  text-underline-offset: 3px; /* Adjust the distance between the text and the underline */
+}
+
+/*top container*/
+/* .top-container {
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -108,8 +137,8 @@ p{
 }
 
 .left-column img {
-  width: 120%; /* Use 100% to make the image fill the entire width of its container */
-  height: auto; /* Maintain the aspect ratio of the image */
+  width: 120%; 
+  height: auto;
 }
 
 .right-column {
@@ -125,10 +154,9 @@ p{
 }
 
 .right-column h1{
-  margin-top: 10px;
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 600;
-}
+} */
 
 .buttons {
   margin-top: 20px;
