@@ -1,12 +1,19 @@
 body {
-    font-family: 'Inter', sans-serif; /* Use Inter font with fallback to sans-serif */
-    font-weight: 300; /* Use a lighter font weight */
-    letter-spacing: -0.2px;
-    margin: 0;
-    padding: 0;
-    background-color: #F8F8F8;
-    color: #2b2b2b;
+  font-family: 'DM Sans', sans-serif; /* Use Inter font with fallback to sans-serif */
+  font-weight: 300; /* Use a lighter font weight */
+  letter-spacing: -0.2px;
+  margin: 0;
+  padding: 0;
+  background-color: #F8F8F8;
+  color: #2b2b2b;
   }
+  
+p{
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 0.2px;
+  line-height: 1.75;
+}
   
   .blur {
     filter: blur(5px); /* Adjust the blur amount as needed */

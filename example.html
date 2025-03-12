@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Mockups Carousel</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+.iteration-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.iteration-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.iteration-card {
+    flex: 1;
+    background: #F8F9FA;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+}
+
+.iteration-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.iteration-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.design-rationale,
+.feedback {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 8px;
+}
+
+.final-solution {
+    border: 2px solid #2E7D32;
+    background: #E8F5E9;
+}
+
+.why-it-works {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 12px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-it-works h4 {
+    color: #2E7D32;
+    font-weight: bold;
+}
+
+.why-it-works ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-it-works li {
+    padding-left: 24px;
+    position: relative;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+.why-it-works li::before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 1.2rem;
+    color: #2E7D32;
+}
+
+    </style>
+</head>
+<body>
+    <section class="iteration-section">
+        <h2>Iteration & Refinement: States Selection</h2>
+        <p>Through iterative testing, I refined the state selection process to balance efficiency, control, and discoverability.</p>
+    
+        <div class="iteration-container">
+            <!-- Iteration 1 -->
+            <div class="iteration-card">
+                <h3>Iteration 1: Multi-Select Dropdown</h3>
+                <img src="coachespick/states_iteration1.jpg" alt="Iteration 1">
+                <p class="design-rationale">💡 <strong>Design Rationale:</strong> Users could search for states and manually select them.</p>
+                <p class="feedback">🚫 <strong>What Happened?</strong> Bulk selection was tedious, requiring excessive manual effort.</p>
+            </div>
+    
+            <!-- Iteration 2 -->
+            <div class="iteration-card">
+                <h3>Iteration 2: Region-Based Selection</h3>
+                <img src="coachespick/states_iteration2.jpg" alt="Iteration 2">
+                <p class="design-rationale">💡 <strong>Design Rationale:</strong> Group states by region for easier scanning.</p>
+                <p class="feedback">✅ <strong>What Happened?</strong> Readability improved, but users found switching tabs disruptive.</p>
+            </div>
+    
+            <!-- Final Iteration -->
+            <div class="iteration-card final-solution">
+                <h3>Iteration 3: Bulk Selection with Granular Control ⭐</h3>
+                <img src="coachespick/states_iteration3.jpg" alt="Final Iteration">
+                <p class="design-rationale">💡 <strong>Final Solution:</strong> Display all states upfront with bulk selection + fine-tuning.</p>
+                <div class="why-it-works">
+                    <h4>✅ Why It Works</h4>
+                    <ul>
+                        <li><strong>Full visibility</strong> — Users can see and select all states at once.</li>
+                        <li><strong>Balances speed and control</strong> — Quick bulk selection, with fine-tuning for precision.</li>
+                        <li><strong>Faster, fewer clicks</strong> — No dropdowns or unnecessary toggling, reducing friction.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,7 +1,5 @@
 body {
-  font-family: 'DM Sans', sans-serif; /* Use Inter font with fallback to sans-serif */
-  font-weight: 300; /* Use a lighter font weight */
-  letter-spacing: -0.2px;
+  font-family: 'Satoshi', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #F8F8F8;
@@ -10,7 +8,7 @@ body {
 
 p{
   font-size: 18px;
-  font-weight: 400; /* Regular weight */
+  font-weight: 200; /* Regular weight */
   letter-spacing: 0.2px; /* Slightly increase spacing */
   line-height: 1.75; /* Adjust for better readability */
 }

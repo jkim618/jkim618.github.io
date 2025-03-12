@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Case Study</title>
+    <link href="coachespick.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="sticky-nav">
+        <a class="logo" href="index.html">
+            <img src="logoTransparent.png" alt="Your Logo">
+        </a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="JooaEunKim_UXDesignerResume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h1>Coach's Pick: A UX Case Study</h1>
+        <p>Designing a Structured Workflow for Customizing Carrier Recommendations</p>
+    </div>
+
+    <div class="content">
+        <div class="overview">
+            <div class="tiny-width">
+                <h5>Overview</h5>
+                <p>In UPlace, carrier recommendations are algorithm-driven, ranking insurers based on various factors. However, the business needed a way to <strong>manually override</strong> these rankings based on strategic priorities.</p>
+                <p>Coach’s Pick is an administrative tool that allows select users to artificially adjust a carrier’s appetite—either promoting it to the top or removing it from the list—based on <strong>business preferences</strong>. </p>
+                <h2>Problem</h2>
+                <p>The business needed a <b>new platform</b> that allowed manual adjustments to promote key partnerships by <b>prioritizing preferred carriers and exclude carriers that weren’t a fit</b> for certain industries or regions. However, there was no existing way to modify rankings, leading to a lack of control over recommendations and an inability to align carrier selection with business strategy.</p>
+                <h2>Solution</h2>
+                <p>I created a <b>step-by-step workflow</b> to streamline the process. The final design provided full control, improved efficiency, and aligned with business needs.</p>
+            </div>
+        </div>
+
+        <div class="hi-fis-overview">
+            <div class="full-image">
+                <img src="coachespick/Frame 4.png">
+            </div>
+        </div>
+
+        <div class="research">
+            <div class="tiny-width">
+                <h5>Understanding User Needs: Research & Insights</h5>
+                <h2>User Research</h2>
+                <p>To design an effective override system for carrier recommendations, I <b>conducted stakeholder interviews</b> with underwriters, business analysts, and decision-makers to understand:</p>
+                <ul>
+                    <li>How underwriters currently adjust carrier recommendations</li>
+                    <li>Challenges with manual overrides in a data-driven system</li>
+                    <li>Decision-making behaviors when selecting carriers</li>
+                    <li>How business priorities influence carrier visibility</li>
+                </ul>
+
+                <h2>Key Findings</h2>
+                <div class="findings-container">
+                    <div class="key-grid">
+                        <div class="key-box">
+                            <h3>🔹 Inefficient Workarounds</h3>
+                            <p>Underwriters lacked a <strong>direct way to modify rankings</strong>, relying on engineering tickets or external lists—<strong>slowing decision-making</strong>.</p>        
+                        </div>
+                        <div class="key-box">
+                            <h3>🔹 Conflicting Business Needs</h3>
+                            <p>Leadership pushed for preferred carriers, while underwriters prioritized <strong>industry fit and claims performance</strong>, creating misalignment.</p>
+                        </div>
+                        <div class="key-box">
+                            <h3>🔹 Data + Strategic Judgment</h3>
+                            <p>While algorithmic rankings were trusted, <strong>real-world factors</strong> like coverage gaps and regional considerations often influenced decisions.</p>                           
+                        </div>
+                        <div class="key-box">
+                            <h3>🔹 Need for Transparency</h3>
+                            <p>Any manual adjustment system required visibility to balance business needs without <strong>introducing bias</strong> or disrupting trust in data integrity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+        <div class="ideation">
+            <div class="tiny-width">
+                <h5>Ideation & Design Exploration</h5>
+                <div class="early-wireframes">
+                    <h2>Early Wireframes & Design Exploration</h2>
+                    <p>Based on initial research, I developed two mid-fidelity concepts to explore different approaches for adjusting carrier rankings. Sliders were initially chosen to provide quick, incremental adjustments without requiring manual data entry, allowing underwriters to fine-tune visibility across multiple dimensions:</p>
+                    <ul>
+                        <li><b>Region</b> – Adjusting visibility based on geographic relevance.</li>
+                        <li><b>Industry Vertical</b> – Prioritizing carriers for specific business sectors.</li>
+                        <li><b>Line of Coverage</b> – Ensuring certain policy types had the right carrier emphasis.</li>
+                    </ul>
+                    <div class="tradeoff-container">
+                        <div class="tradeoff-row">
+                            <div class="tradeoff-item">
+                                <div class="tradeoff-image">
+                                    <img src="coachespick/Initial 2-1.jpg" alt="Concept 1" onclick="openModal(this.src)">
+                                </div>
+                                <div class="tradeoff-content">
+                                    <div class="tradeoff-title">Concept 1: Always-Visible Controls</div>
+                                    <p>Users adjust carrier rankings through always-visible sliders—no extra clicks required.</p>
+                                    <!-- <ul class="tradeoff-list">
+                                        <li class="pros">✔ Always-visible sliders, no extra clicks.</li>
+                                        <li class="cons">✖ Can feel cluttered and overwhelming.</li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                            <div class="tradeoff-item">
+                                <div class="tradeoff-image">
+                                    <img src="coachespick/initial2-2.jpg" alt="Concept 2" onclick="openModal(this.src)">
+                                </div>
+                                <div class="tradeoff-content">
+                                    <div class="tradeoff-title">Concept 2: Expandable Adjustments</div>
+                                    <p>Users manage overrides within collapsible sections, reducing visual noise.</p>
+                                    <!-- <ul class="tradeoff-list">
+                                        <li class="pros">✔ Cleaner UI with collapsible sections.</li>
+                                        <li class="cons">✖ Requires extra clicks to expand.</li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="insights-box">
+                            <h2>Key Insights from Stakeholders</h2>
+                            <ul>
+                                <li><b>Simplicity over fine-tuning</b> – Sliders were unnecessary; users only needed to promote or exclude carriers.
+                                </li>
+                                <li><b>Granular selection was key</b> – Industry-wide selections were too broad; NAICS code-level control was necessary.</li>
+                                <li><b>State-based adjustments > Regional groupings</b> – Users preferred state-level control to fine-tune recommendations.</li>
+                            </ul>
+                        </div>
+                        <p>This feedback led to shifting away from granular sliders toward a step-by-step selection process, prioritizing speed, clarity, and precise overrides while integrating seamlessly into existing workflows.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="analyze">
+            <div class="tiny-width">
+                <h5>Refining the User Flow</h5>
+                <div class="Flow">
+                    <h2>Visualizing the Selection Process</h2>
+                    <p>After aligning on the key requirements, I mapped out a <strong>user flow</strong> to visualize how underwriters would navigate through carrier selections and adjustments. In a stakeholder meeting, I walked through this flow to validate the logic and ensure it aligned with real-world user behaviors. With this feedback, I refined the designs to better fit the decision-making process before moving to high-fidelity prototypes.</p>
+                    <div class="imgContainer">
+                        <img src="coachespick/flow.png" onclick="openModal(this.src)">
+                    </div>
+                    <p>With a structured workflow in place, I focused on two critical selection processes:</p>
+                    <ul>
+                        <li><b>NAICS Code Selection</b> – Ensuring precise industry-based adjustments by allowing overrides at the NAICS code level rather than broad industry groups.</li>
+                        <li><b>State Selection</b> – Replacing regional selections with state-level control, giving underwriters more flexibility to fine-tune carrier visibility.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="iterations">
+            <div class="full-width-state">
+                <div class="tiny-width">
+                    <h5>Iteration & Refinement</h5>
+                    <h2>States Selection</h2>
+                    <p>Through iterative testing, I refined the state selection process to balance efficiency, control, and discoverability.</p>
+                    <section class="iteration-section">
+                        <div class="iteration-container">
+                            <!-- Iteration 1 -->
+                            <div class="iteration-card">
+                                <h3>Iteration 1: Multi-Select Dropdown</h3>
+                                <img src="coachespick/statesearch1-2.jpg" alt="Iteration 1" onclick="openModal(this.src)">
+                                <p class="design-rationale">💡 <strong>Design Rationale:</strong> Users could <b>search and select</b> states manually via a dropdown.</p>
+                                <p class="feedback">🚫 <strong>What Happened?</strong> While useful for finding specific states, bulk selection was <b>tedious</b>—users had to select states one by one, creating unnecessary friction.</p>
+                            </div>
+                    
+                            <!-- Iteration 2 -->
+                            <div class="iteration-card">
+                                <h3>Iteration 2: Region-Based Selection</h3>
+                                <img src="coachespick/statessearch2.jpg" alt="Iteration 2" onclick="openModal(this.src)">
+                                <p class="design-rationale">💡 <strong>Design Rationale:</strong> To improve scanability, I <b>grouped states</b> into regions, aiming to help users find relevant states faster without excessive scrolling.</p>
+                                <p class="feedback">🚫 <strong>What Happened?</strong> Readability improved, but new friction emerged—switching tabs <b>disrupted selection</b> across multiple regions, adding extra clicks, while <b>limited visibility</b> made comparisons more difficult.</p>
+                            </div>
+                    
+                            <!-- Final Iteration -->
+                            <div class="iteration-card final-solution">
+                                <h3>Iteration 3: Bulk Selection with Granular Control</h3>
+                                <img src="coachespick/statessearchfinal.jpg" alt="Final Iteration" onclick="openModal(this.src)">
+                                <p class="design-rationale">💡 <strong>Final Solution:</strong> Instead of region-based selection, I <b>displayed all states</b> upfront with a <b>bulk select</b> option while preserving <b>manual fine-tuning</b>.</p>
+                                <div class="why-it-works">
+                                    <h4>Why It Works</h4>
+                                    <ul>
+                                        <li>Most users started by <b>selecting all states</b> and then fine-tuned by deselecting a few.</li>
+                                        <li>Bulk selection <b>reduced cognitive effort</b> compared to the dropdown approach.</li>
+                                        <li>Eliminating tabs and dropdowns <b>accelerated selection speed</b>, aligning with how users naturally worked.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+            <div class="full-width-naics">
+                <div class="tiny-width">
+                    <h2>NAICS Code Selection</h2>
+                    <p>The NAICS selection process followed a similar iteration path, evolving to support bulk selection while reducing cognitive overload.</p>
+                    <section class="iteration-section">
+                        <div class="iteration-container">
+                            <!-- Iteration 1 -->
+                            <div class="iteration-card">
+                                <h3>Iteration 1: Search-Based Filtering</h3>
+                                <img src="coachespick/naicsinitial.jpg" alt="Iteration 1" onclick="openModal(this.src)">
+                                <p class="design-rationale">💡 <strong>Design Rationale:</strong> A <b>search-based multi-select dropdown</b> allowed users to filter NAICS codes manually.</p>
+                                <p class="feedback">🚫 <strong>What Happened?</strong> Users <b>struggled with bulk selection</b>, needing to know exact search terms, which slowed them down.</p>
+                            </div>
+                    
+                            <!-- Iteration 2 -->
+                            <div class="iteration-card">
+                                <h3>Iteration 2: Flat List with Bulk Selection</h3>
+                                <img src="coachespick/naicsiteration1.jpg" alt="Iteration 2" onclick="openModal(this.src)">
+                                <p class="design-rationale">💡 <strong>Design Rationale:</strong> To improve visibility, I <b>displayed all NAICS codes upfront</b> in a flat list, reducing reliance on search.</p>
+                                <p class="feedback">🚫 <strong>What Happened?</strong> Speed improved, but <b>without hierarchy</b>, scanning became difficult—users struggled to differentiate between sections.</p>
+                            </div>
+                    
+                            <!-- Final Iteration -->
+                            <div class="iteration-card final-solution">
+                                <h3>Iteration 3: Progressive Accordion with Visual Hierarchy</h3>
+                                <img src="coachespick/naicsiteration3.jpg" alt="Final Iteration" onclick="openModal(this.src)">
+                                <p class="design-rationale">💡 <strong>Final Solution:</strong> Introduced collapsible categories for a structured, scalable selection experience.</p>
+                                <div class="why-it-works">
+                                    <h4>Why It Works</h4>
+                                    <ul>
+                                        <li>Users preferred scanning over searching, reinforcing the need for a structured layout.</li>
+                                        <li>Collapsible sections reduced cognitive load, preventing information overload.</li>
+                                        <li>Bulk selection was faster yet still flexible, allowing quick high-level selections with precision adjustments when needed.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="final-fidelitys">
+            <div class="tiny-width">
+                <h5>Final Solution</h5>
+                <h2>Hi Fidelity Designs</h2>
+                <p>The final high-fidelity designs reflect a balance between usability, flexibility, and speed, allowing users to seamlessly configure appetite preferences with minimal friction.</p>
+               </div>
+        </div>
+        <div class="final-solution-overview">
+            <div class="full-image">
+                <img src="coachespick/finalsolutionoverview.png">
+            </div>
+        </div>
+
+        <div class="outcomes-section">
+            <div class="full-width-outcomes">
+                <div class="tiny-width">
+                    <h5>Impact & Outcome</h5>
+                    <h2>Driving Efficiency & Strategic Control</h2>
+                    <p>By streamlining the selection process, underwriters gained more control over carrier preferences while reducing inefficiencies. Within weeks, <b>measurable improvements</b> emerged, demonstrating the tool’s impact on workflow efficiency.</p>
+                    <div class="outcomes-container">
+                        <div class="outcome">
+                            <h3>📉 40% Fewer Support Requests</h3>
+                            <p>Before Coach’s Pick, underwriting teams had to <b>request backend changes</b> to carrier preferences, leading to delays and extra workload for support teams. Support ticket data from the first three months post-launch showed a <b>40% decrease in ranking adjustment requests</b>.</p>
+                        </div>
+                        <div class="outcome">
+                            <h3>🚀 85% Adoption in 6 Weeks</h3>
+                            <p>Usability testing and stakeholder feedback revealed that underwriters quickly adapted to the new workflow. Within six weeks, <b>85% of underwriters</b> had successfully configured at least one carrier preference, based on internal usage analytics.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <button id="backToTop" class="back-to-top" title="Back to Top">↑</button>
+        
+    </div>
+
+    <!-- Fullscreen Image Modal -->
+    <div id="image-modal" class="modal" onclick="closeModal(event)">
+        <img id="modal-img">
+        <span class="close-modal" onclick="closeModal(event)">&times;</span>
+    </div>
+
+    </div>
+
+
+    <script>
+  function openModal(imageSrc) {
+            const modal = document.getElementById("image-modal");
+            const modalImg = document.getElementById("modal-img");
+            modalImg.src = imageSrc;
+            modal.classList.add("active");
+        }
+
+        function closeModal(event) {
+            if (event.target === document.getElementById("image-modal") || event.target.classList.contains("close-modal")) {
+                document.getElementById("image-modal").classList.remove("active");
+            }
+        }
+
+
+        // Get the button
+const backToTopBtn = document.getElementById("backToTop");
+
+// Show the button when the user scrolls down
+window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "flex";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+};
+
+// Scroll smoothly to the top when clicked
+backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+    </script>
+</body>
+</html>
