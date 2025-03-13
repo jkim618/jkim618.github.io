@@ -36,8 +36,41 @@
                       <p>Product Designer with <span class="highlight">4 years of experience</span> in insurance and enterprise software. My background in <span class="highlight">software development</span> enables me to bridge the gap between design and engineering, combining technical expertise with design thinking.</p>
                     </div>
                   </div>
+                  <section class="case-studies">
+                    <h1>Featured Work</h1>
+                    <!-- Featured Case Study -->
+                    <div class="featured-case">
+                        <a href="coachespick.html">
+                            <img src="coachespick/coachespickthumblong.jpg" alt="Coach's Pick">
+                        </a>
+                        <div class="case-content">
+                            <h3>Coaches Pick</h3>
+                            <p>Designing a structured workflow for customizing carrier recommendations.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Grid of Smaller Case Studies -->
+                    <div class="case-grid">
+                        <div class="case-card">
+                            <a href="pathdashboard.html">
+                                <img src="path/images/paththumbnaillong.png" alt="Case Study 1">
+                            </a>
+                            <h3>Path</h3>
+                            <p>An insurance risk control platform maximizing savings and minimizing loss impact through tailored solutions.</p>
+                        </div>
+            
+                        <div class="case-card">
+                            <a href="sequeerfull.html">
+                                <img src="sequeer/sequeerthumbnew.png" alt="Case Study 2">
+                            </a>
+                            <h3>Sequeer</h3>
+                            <p>A B2C mobile app that serves as a comprehensive global search engine for the LGBTQ community.</p>
+                        </div>
+            
+                    </div>
+                </section>
 
-                <div class="portfolio-container">
+                <!-- <div class="portfolio-container">
                     <div class="portfolio-item">
                         <a href="coachespick.html">
                             <img src="coachespick/coachespickthumb.png" alt="Item 1">
@@ -68,14 +101,7 @@
                         <p>A SaaS product designed for efficient case submission and management at local and state government levels.
                         </p>
                     </div>
-                    <!-- <div class="portfolio-item">
-                        <a href="autoestimator.html">
-                            <img src="auto/images/autothumbnew.png" alt="Item 3">
-                        </a>
-                        <h2>Auto Premium Estimator</h2>
-                        <p>An innovative SaaS application that simplifies the calculation of auto insurance premiums.</p>
-                    </div> -->
-                </div>
+                </div> -->
 
                 <p id="coded">Coded in HTML, CSS, and Javascript with love :)</p>
             </div>
@@ -90,7 +116,7 @@
 
             tl.from(".sticky-nav", { opacity: 0, y: 50, duration: 0.4 })
             .from(".intro-section", { opacity: 0, y: 50, duration: 0.4 })
-                .from(".portfolio-container", { opacity: 0, y: 50, duration: 0.4 })
+                .from(".case-studies", { opacity: 0, y: 50, duration: 0.4 })
 
             // Create a ScrollMagic scene
             new ScrollMagic.Scene({
