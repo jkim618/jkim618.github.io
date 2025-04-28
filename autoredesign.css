@@ -56,7 +56,7 @@ body {
 
 /* === MAIN CONTENT === */
 .hero {
-    background: url('coachespick/coachespickfullthimb.jpg') center/cover no-repeat;
+    background: url('autoredesign/images/autoredesignfullthumb.jpg') center/cover no-repeat;
     height: 900px;
     display: flex;
     flex-direction: column;
@@ -126,20 +126,10 @@ body {
 .research {
     width: 100%; /* Make sure it spans full width */
     background-color: #f2f7fc;/* Your desired background color */
+    padding: 50px 0; /* Add padding for spacing */
     display: flex;
     justify-content: center; /* Center the inner content */
 }
-
-.insights {
-    background: #f9f9f9;
-    border-left: 4px solid #4CAF50;
-    padding: 15px;
-    margin-top: 20px;
-  }
-  .insights ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
 
 .findings-container{
     max-width: 1000px;
@@ -600,7 +590,7 @@ p {
 }
 
 .insights-box {
-    background: white; /* Light blue background */
+    background: #f5faff; /* Light blue background */
     border-left: 5px solid #007bff; /* Accent border */
     padding: 20px;
     border-radius: 8px;
@@ -609,7 +599,7 @@ p {
 }
 
 .insights-box:last-of-type {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 /* Makes sure the insights box is positioned inside the content container */

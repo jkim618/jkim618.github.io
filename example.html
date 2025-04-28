@@ -1,134 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Mockups Carousel</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <style>
-.iteration-section {
-    text-align: center;
-    padding: 40px 0;
-}
-
-.iteration-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    margin-top: 30px;
-}
-
-.iteration-card {
-    flex: 1;
-    background: #F8F9FA;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease-in-out;
-    text-align: left;
-}
-
-.iteration-card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 16px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.iteration-card h3 {
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.design-rationale,
-.feedback {
-    font-size: 0.95rem;
-    color: #555;
-    margin-top: 8px;
-}
-
-.final-solution {
-    border: 2px solid #2E7D32;
-    background: #E8F5E9;
-}
-
-.why-it-works {
-    background: white;
-    padding: 16px;
-    border-radius: 8px;
-    margin-top: 12px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.why-it-works h4 {
-    color: #2E7D32;
-    font-weight: bold;
-}
-
-.why-it-works ul {
-    list-style: none;
-    padding: 0;
-}
-
-.why-it-works li {
-    padding-left: 24px;
-    position: relative;
-    font-size: 0.95rem;
-    margin-bottom: 6px;
-}
-
-.why-it-works li::before {
-    content: "✅";
-    position: absolute;
-    left: 0;
-    top: 2px;
-    font-size: 1.2rem;
-    color: #2E7D32;
-}
-
-    </style>
+  <meta charset="UTF-8">
+  <title>Coach's Pick - Research & Discovery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    h3 {
+      font-size: 22px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    ul {
+      margin-left: 20px;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .insights {
+      background: #f9f9f9;
+      border-left: 4px solid #4CAF50;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    .insights ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+  </style>
 </head>
 <body>
-    <section class="iteration-section">
-        <h2>Iteration & Refinement: States Selection</h2>
-        <p>Through iterative testing, I refined the state selection process to balance efficiency, control, and discoverability.</p>
-    
-        <div class="iteration-container">
-            <!-- Iteration 1 -->
-            <div class="iteration-card">
-                <h3>Iteration 1: Multi-Select Dropdown</h3>
-                <img src="coachespick/states_iteration1.jpg" alt="Iteration 1">
-                <p class="design-rationale">💡 <strong>Design Rationale:</strong> Users could search for states and manually select them.</p>
-                <p class="feedback">🚫 <strong>What Happened?</strong> Bulk selection was tedious, requiring excessive manual effort.</p>
-            </div>
-    
-            <!-- Iteration 2 -->
-            <div class="iteration-card">
-                <h3>Iteration 2: Region-Based Selection</h3>
-                <img src="coachespick/states_iteration2.jpg" alt="Iteration 2">
-                <p class="design-rationale">💡 <strong>Design Rationale:</strong> Group states by region for easier scanning.</p>
-                <p class="feedback">✅ <strong>What Happened?</strong> Readability improved, but users found switching tabs disruptive.</p>
-            </div>
-    
-            <!-- Final Iteration -->
-            <div class="iteration-card final-solution">
-                <h3>Iteration 3: Bulk Selection with Granular Control ⭐</h3>
-                <img src="coachespick/states_iteration3.jpg" alt="Final Iteration">
-                <p class="design-rationale">💡 <strong>Final Solution:</strong> Display all states upfront with bulk selection + fine-tuning.</p>
-                <div class="why-it-works">
-                    <h4>✅ Why It Works</h4>
-                    <ul>
-                        <li><strong>Full visibility</strong> — Users can see and select all states at once.</li>
-                        <li><strong>Balances speed and control</strong> — Quick bulk selection, with fine-tuning for precision.</li>
-                        <li><strong>Faster, fewer clicks</strong> — No dropdowns or unnecessary toggling, reducing friction.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+
+  <div class="section">
+    <h2>Research & Discovery</h2>
+    <h3>Stakeholder Discovery</h3>
+    <p>
+      At the start of the project, I conducted discovery sessions with underwriters, business analysts, and product managers to understand the limitations of the current system and define requirements for a manual override tool.
+    </p>
+    <p>During these sessions, I explored questions such as:</p>
+    <ul>
+      <li>How are carrier recommendations currently managed?</li>
+      <li>In what situations would you need to promote or exclude a carrier?</li>
+      <li>What level of control is necessary — regional, state, or industry-specific?</li>
+      <li>How important is visibility and transparency when manual adjustments are made?</li>
+    </ul>
+
+    <div class="insights">
+      <h3>Key Insights:</h3>
+      <ul>
+        <li><strong>No Manual Control:</strong> Users had no ability to adjust backend-driven recommendations, creating gaps between strategic goals and system outputs.</li>
+        <li><strong>Granular Adjustments Needed:</strong> Stakeholders emphasized the need for state-level and NAICS code-level targeting rather than broad categories.</li>
+        <li><strong>Transparency was Critical:</strong> Manual changes needed to be clearly visible and auditable to maintain user trust in the system.</li>
+      </ul>
+    </div>
+  </div>
+
 </body>
 </html>
