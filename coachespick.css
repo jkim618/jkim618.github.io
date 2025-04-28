@@ -217,11 +217,20 @@ body {
 
 .full-width-outcomes{
     width: 100%;
-    padding: 50px 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 120px;
+}
+
+.full-width-dev{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .final-statement {
