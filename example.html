@@ -1,75 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Coach's Pick - Research & Discovery</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      line-height: 1.6;
-      color: #333;
-    }
-    h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
-      color: #222;
-    }
-    h3 {
-      font-size: 22px;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      color: #555;
-    }
-    ul {
-      margin-left: 20px;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 8px;
-    }
-    .insights {
-      background: #f9f9f9;
-      border-left: 4px solid #4CAF50;
-      padding: 15px;
-      margin-top: 20px;
-    }
-    .insights ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="section">
+<section class="section">
+    <h2>Coach’s Pick: A UX Case Study</h2>
+    <p><strong>Objective:</strong> Design an override workflow that gives underwriters and business users the ability to promote or exclude insurance carriers from algorithmic recommendations based on nuanced, strategic business needs.</p>
+    <p>In UPlace, carrier recommendations were driven by backend algorithms that ranked insurers based on factors like pricing, coverage match, and historical performance. However, underwriters often needed to manually intervene — especially when business priorities or regional realities contradicted what the system suggested. Coach’s Pick was created to bridge that gap — enabling human override in a structured, transparent, and scalable way.</p>
+  </section>
+  
+  <section class="section">
     <h2>Research & Discovery</h2>
-    <h3>Stakeholder Discovery</h3>
-    <p>
-      At the start of the project, I conducted discovery sessions with underwriters, business analysts, and product managers to understand the limitations of the current system and define requirements for a manual override tool.
-    </p>
-    <p>During these sessions, I explored questions such as:</p>
+    <p>I began the project by conducting <strong>semi-structured interviews</strong> with 7 users, including senior underwriters, business analysts, and regional managers. These conversations uncovered both workflow pain points and deeper systemic trust issues.</p>
+  
+    <h3>Research Questions</h3>
     <ul>
-      <li>How are carrier recommendations currently managed?</li>
-      <li>In what situations would you need to promote or exclude a carrier?</li>
-      <li>What level of control is necessary — regional, state, or industry-specific?</li>
-      <li>How important is visibility and transparency when manual adjustments are made?</li>
+      <li>In what scenarios do you override the system’s recommended carriers?</li>
+      <li>What signals or attributes influence your decision to promote or exclude a carrier?</li>
+      <li>How important is geographic or industry-based targeting?</li>
+      <li>What are your current workarounds?</li>
+      <li>What would make an override tool feel fast, reliable, and trustworthy?</li>
     </ul>
-
-    <div class="insights">
-      <h3>Key Insights:</h3>
-      <ul>
-        <li><strong>No Manual Control:</strong> Users had no ability to adjust backend-driven recommendations, creating gaps between strategic goals and system outputs.</li>
-        <li><strong>Granular Adjustments Needed:</strong> Stakeholders emphasized the need for state-level and NAICS code-level targeting rather than broad categories.</li>
-        <li><strong>Transparency was Critical:</strong> Manual changes needed to be clearly visible and auditable to maintain user trust in the system.</li>
-      </ul>
-    </div>
-  </div>
-
-</body>
-</html>
+  
+    <h3>Key Findings</h3>
+    <ul>
+      <li><strong>Manual Overrides Are Frequent:</strong> Users often ignored algorithmic rankings, preferring their own judgment based on regional insight, recent claims behavior, or business relationships.</li>
+      <li><strong>No Native Controls:</strong> Overrides required manual engineering tickets or offline documentation, creating delays and inconsistency.</li>
+      <li><strong>Overrides Needed Precision:</strong> Adjustments needed to apply at the <strong>state</strong> and <strong>NAICS code</strong> level, not broad categories.</li>
+      <li><strong>Speed Was Crucial:</strong> Underwriters wanted to make bulk changes quickly, then refine selections as needed.</li>
+      <li><strong>Transparency Was Non-Negotiable:</strong> Manual changes had to be traceable to avoid internal friction and maintain confidence in recommendations.</li>
+    </ul>
+  </section>
+  
+  <section class="section">
+    <h2>How Research Informed the Design</h2>
+    <p>Every major component in the override workflow was a direct response to user insight:</p>
+    <ul>
+      <li><strong>Carrier override toggles</strong> addressed the need for manual control when system recommendations failed.</li>
+      <li><strong>NAICS and state selectors</strong> supported highly specific targeting — a common user expectation uncovered in discovery.</li>
+      <li><strong>Bulk select with fine-tuning</strong> emerged after early feedback revealed the inefficiency of dropdowns and region-based tabs.</li>
+      <li><strong>Review step</strong> improved confidence and reduced fear of accidental changes, especially among newer users.</li>
+    </ul>
+  </section>
+  <section class="section">
+    <h2>Personas</h2>
+    <p><strong>Angela – Senior Underwriter</strong><br>
+    • 15+ years of experience<br>
+    • Needs precise control across different industries and states<br>
+    • Values autonomy and resents opaque systems</p>
+  
+    <p><strong>James – Regional Business Analyst</strong><br>
+    • Balances carrier strategy with underwriting performance<br>
+    • Supports multiple underwriters with reporting and insight<br>
+    • Needs scalable controls with low friction</p>
+  </section>
+  
+  <section class="section">
+    <h2>Designing the Override Workflow</h2>
+    <p>Based on the research, I proposed a linear step-by-step workflow that focused on:</p>
+    <ul>
+      <li><strong>Clarity:</strong> One decision at a time — first choose a carrier, then apply override type</li>
+      <li><strong>Targeting:</strong> Apply changes by NAICS code and/or state with bulk select and deselect</li>
+      <li><strong>Review:</strong> Final screen to validate logic before saving override</li>
+    </ul>
+    <p>This structure aligned with how users thought: start broad, then refine. It also reduced the cognitive load by avoiding complex controls like sliders or dynamic weighting.</p>
+  </section>
+  
+  <section class="section">
+    <h2>Design Iterations</h2>
+  
+    <h3>State Targeting</h3>
+    <ul>
+      <li><strong>V1 – Multi-select Dropdown:</strong> Too tedious for bulk selections</li>
+      <li><strong>V2 – Regional Tabs:</strong> Reduced scrolling, but required tab-switching and disrupted flow</li>
+      <li><strong>V3 – Flat Grid with Bulk Select + Deselect:</strong> Fastest and most natural; adopted as final</li>
+    </ul>
+  
+    <h3>NAICS Targeting</h3>
+    <ul>
+      <li><strong>V1 – Searchable Dropdown:</strong> Users needed to know exact code</li>
+      <li><strong>V2 – Flat List:</strong> Improved access but lacked structure for scanability</li>
+      <li><strong>V3 – Accordion with Category Groupings:</strong> Best balance of overview and precision</li>
+    </ul>
+  </section>
+  
+  <section class="section">
+    <h2>High-Fidelity Designs</h2>
+    <p>The final UI was clean, responsive, and designed within the company’s Material-based design system. I ensured consistent component use and alignment with internal accessibility standards. Each interaction was annotated and spec'd in Figma.</p>
+  </section>
+  
+  <section class="section">
+    <h2>Developer Handoff</h2>
+    <p>I created a detailed handoff package, including:</p>
+    <ul>
+      <li>Screen-by-screen flows with edge case handling</li>
+      <li>Written logic for override hierarchy and conflict resolution</li>
+      <li>Interaction notes, including visual states and validations</li>
+    </ul>
+    <p>I also hosted live handoff sessions with engineers to confirm expectations and answer implementation questions in real-time.</p>
+  </section>
+  
+  <section class="section">
+    <h2>Outcomes</h2>
+    <ul>
+      <li><strong>📉 40% decrease</strong> in support tickets for ranking changes</li>
+      <li><strong>🚀 85% adoption</strong> among underwriters within the first 6 weeks</li>
+      <li><strong>🕐 Reduced manual effort</strong> and improved trust in the recommendation engine</li>
+    </ul>
+  </section>
+  
+  <section class="section">
+    <h2>Reflection</h2>
+    <p>This project taught me how to design for flexibility without compromising simplicity. By building with real mental models and user insight, we turned a rigid, backend-driven feature into a scalable decision-support tool. If given more time, I’d conduct follow-up research to track override usage trends and correlate override logic with conversion outcomes.</p>
+  </section>
+  

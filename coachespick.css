@@ -217,7 +217,14 @@ body {
 
 .full-width-outcomes{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
 
+.full-width-learnings{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
