@@ -1,0 +1,744 @@
+body {
+    font-family: 'Satoshi', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #4A4A4B;
+}
+
+/* === NAVIGATION === */
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.sticky-nav .logo {
+    margin-left: 40px;
+}
+
+.sticky-nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 80px;
+    padding: 0;
+}
+
+.sticky-nav ul li {
+    margin-left: 32px;
+}
+
+.sticky-nav ul li:first-child {
+    margin-left: 0;
+}
+
+.sticky-nav ul li a {
+    text-decoration: none;
+    color: #989898;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.sticky-nav ul li a:hover {
+    color: #333;
+}
+
+.logo img {
+    max-width: 60px;
+    height: auto;
+}
+
+/* === MAIN CONTENT === */
+.hero {
+    background: url('coachespick/coachespickfullthimb.jpg') center/cover no-repeat;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    padding-top: 80px;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.hero p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content {
+    width: 100%; /* Ensure it spans the full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overview {
+    width: 100%; /* Make sure it spans full width */
+    padding: 50px 0; /* Add padding for spacing */
+    display: flex;
+    justify-content: center; /* Center the inner content */
+}
+
+/* === OVERVIEW SECTIONS === */
+.overview-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.overview-column {
+    flex: 1;
+    margin-right: 32px;
+}
+
+.hi-fis-overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden; /* Prevents overflow */
+    background-color: #edf1f5;
+}
+
+.full-image img {
+    width: 100%; /* Ensures it scales within the div */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Prevents cropping */
+    max-width: 100%;
+}
+
+.research {
+    width: 100%; /* Make sure it spans full width */
+    background-color: #f2f7fc;/* Your desired background color */
+    display: flex;
+    justify-content: center; /* Center the inner content */
+}
+
+.insights {
+    background: #f9f9f9;
+    border-left: 4px solid #4CAF50;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  .insights ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+.findings-container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.key-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.key-box{
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+
+.iterations{
+    width: 100%; /* Ensure it spans the full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tiny-width{
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.full-width{
+    width: 100%;
+    background-color: #f2f7fc; /* Change as needed */
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-transition {
+    height: 80px; /* Adjust height for smooth blending */
+    background: linear-gradient(to bottom, #f9f9f9, #eef4ff); /* Creates a subtle fade */
+}
+
+.full-width-analyze{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+}
+
+.full-width-naics{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.full-width-outcomes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.full-width-learnings{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.full-width-dev{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.final-statement {
+    background: #f8fdf5;; /* Soft contrast */
+    padding: 15px;
+    font-size: 16px;
+    border-left: 4px solid #2e7d32; /* Subtle green accent */
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.full-width-state{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iteration-section {
+    text-align: center;
+    padding: 8px 0;
+}
+
+.iteration-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.iteration-card {
+    flex: 1;
+    background: #F8F9FA;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+}
+
+.iteration-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.iteration-card img:hover{
+    transform: scale(1.08);
+}
+
+.iteration-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.design-rationale,
+.feedback {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 8px;
+}
+
+.final-solution {
+    border: 2px solid #2E7D32;
+    background: #E8F5E9;
+}
+
+.why-it-works {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 12px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-it-works h4 {
+    color: #2E7D32;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.why-it-works ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-it-works li {
+    padding-left: 24px;
+    position: relative;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+.why-it-works li::before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 1.2rem;
+    color: #2E7D32;
+}
+
+.final-solution-overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 0; /* Adds space above and below for a natural flow */
+    padding-bottom: 20px;
+    background: radial-gradient(circle, rgba(200, 225, 255, 0.6) 10%, rgba(220, 235, 255, 0.4) 50%, rgba(255, 255, 255, 0) 90%);
+}
+
+.iteration {
+    flex: 1;
+    text-align: center;
+    max-width: 32%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ensure all titles take up the same height */
+.iteration h3 {
+    min-height: 3rem; /* Adjust this to make all headings align */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure paragraph text is evenly spaced */
+.iteration p {
+    flex-grow: 1;
+    padding: 0 10px; /* Adds breathing space */
+    font-size: 0.9rem;
+}
+
+/* Highlight the final iteration without misaligning the others */
+.iteration.highlight {
+    transform: scale(1.02);
+    background: rgba(0, 120, 255, 0.1);
+    border: 2px solid #0078ff;
+    border-radius: 8px;
+    box-shadow: 0px 6px 14px rgba(0, 120, 255, 0.2);
+    padding: 15px;
+}
+
+/* Ensure images don’t disrupt alignment */
+.iteration img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease-in-out;
+}
+
+.iteration img:hover{
+    transform: scale(1.04);
+}
+
+
+.iteration.highlight img {
+    box-shadow: 0 6px 16px rgba(0, 120, 255, 0.3);
+    transform: scale(1.02);
+}
+
+.iteration.highlight img:hover {
+    transform: scale(1.04);
+}
+
+.iteration h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+
+
+/* Responsive: Stack columns into rows on smaller screens */
+@media (max-width: 900px) {
+    .iteration-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .iteration {
+        max-width: 90%;
+    }
+}
+
+
+/* === HEADINGS & TEXT === */
+h1 {
+    color: #333;
+    font-size: 46px;
+    font-family: 'Outfit', sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #3D3D3D;
+    font-family: 'Outfit', sans-serif;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: gray;
+    font-family: 'Outfit', sans-serif;
+}
+
+h5 {
+    margin-top: 60px;
+    font-size: 16px;
+    color:#3f6ebf;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 18px;
+    color: #3D3D3D;
+}
+
+.ideation{
+    padding: 50px 0; 
+}
+
+.outcomes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.outcome {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.outcome h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #2b4eff;
+}
+
+.outcome p {
+    font-size: 1rem;
+    color: #333;
+}
+
+
+/* === IMAGE CONTAINERS === */
+
+.imgContainer {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.imgContainer img {
+    width: 100%;
+    max-width: 1200px; /* Increase max width */
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    margin: auto;
+}
+
+
+.tradeoff-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.tradeoff-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.tradeoff-item {
+    flex: 1;
+    text-align: center;
+}
+
+.tradeoff-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease-in-out;
+}
+
+.tradeoff-image img:hover {
+    transform: scale(1.04);
+}
+
+.tradeoff-content {
+    margin-top: 15px;
+}
+
+.tradeoff-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.tradeoff-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tradeoff-list li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4A4A4B;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+}
+
+
+/* === FULLSCREEN MODAL FOR IMAGE ZOOM === */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: none; /* Removes unwanted white border */
+    background: none;
+}
+
+.modal.active {
+    display: flex;
+}
+
+/* Close Button */
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.insights-box {
+    background: white; /* Light blue background */
+    border-left: 5px solid #007bff; /* Accent border */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 100%; /* Ensures it stays within .content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.insights-box:last-of-type {
+    margin-top: 40px;
+}
+
+/* Makes sure the insights box is positioned inside the content container */
+.content .insights-box {
+    padding-left: 40px; /* Matches the main content padding */
+    padding-right: 40px; /* Matches the main content padding */
+}
+
+.insights-box h2 {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.insights-box h2::before {
+    content: "💡"; /* Lightbulb emoji as an icon */
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+.insights-box ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.insights-box li {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.insights-box li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+.naics-state {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.naics-state-section {
+    margin-bottom: 60px;
+}
+
+.naics-state-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1200px;
+}
+
+.naics-state-image {
+    flex: 2;
+    text-align: center;
+}
+
+.naics-state-image img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    margin: auto;
+}
+
+.naics-state-text {
+    flex: 1;
+}
+
+.feedback {
+    background: #e3f2fd;
+    padding: 15px;
+    border-left: 5px solid #0056b3;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.feedback-box {
+    background: #f8f9fa;
+    color: #333;
+    border-left: 5px solid #ff5e5e;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10); /* Soft shadow */
+    padding: 12px 15px;  /* Slightly smaller padding */
+    font-size: 15px;  /* Keeps it compact */
+    margin-top: 10px;
+}
+
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}

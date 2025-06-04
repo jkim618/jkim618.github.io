@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Case Study</title>
+    <link href="uplacerenewals.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="sticky-nav">
+        <a class="logo" href="index.html">
+            <img src="logoTransparent.png" alt="Your Logo">
+        </a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="JooaEunKim_UXDesignerResume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h1>Renewals: A UX Case Study</h1>
+        <p>Redesigning the Carrier Recommendations Matrix for Policy-Level Comparison</p>
+    </div>
+
+    <div class="content">
+        <div class="overview">
+            <div class="tiny-width">
+                <h5>Overview</h5>
+                <p>UPlace's Carrier Recommendations Matrix helps brokers identify which insurance carriers are best suited to cover a prospect’s insurance needs across multiple lines. Carriers are ranked based on appetite, and the existing UI displays whether they fall within the Top 5 or Next 5 for each coverage type.</p>
+                <p>However, this overview operated only at the line-of-coverage level. With most lines having several specific policy types, the existing tool failed to surface the nuances brokers needed to make informed decisions – especially during renewals.</p>
+                <h2>Problem</h2>
+                <h3>How might we empower brokers to make smarter renewal decisions by giving them the ability to compare carriers across individual policies, not just coverage types?</h3>
+                <p>The original summary matrix only supported one column per line of coverage, meaning users could see carrier rankings (Top 5/Next 5) for broad categories like Property or Auto, but not for the specific policies that fall under those categories.</p>
+                <p>Users needed to:</p>
+                <ul>
+                    <li>Compare carriers side-by-side at a policy level</li>
+                    <li>Understand which carriers rank Top 5 for the specific policies they care about</li>
+                    <li>Quickly assess which carriers can write the most policies across the account</li>
+                </ul>
+                <h2>Solution</h2>
+                <p>To address this, <I></I> redesigned the matrix view to support policy-level comparisons while preserving usability and scannability.</p>
+
+            </div>
+        </div>
+            <div class="full-width-dev">
+                <div class="tiny-width">
+                    <div class="full-image">
+                        <img src="uplacerenewals/BeforeAfter.png">
+                    </div>
+
+                </div>
+            </div>
+        <div class="research">
+            <div class="tiny-width">
+                <h5>Understanding User Needs: Research & Insights</h5>
+                <h2>User Research</h2>
+                <p>To better understand both user behavior and business expectations, I conducted interviews with key internal stakeholders — including brokers, underwriters, and business analysts who regularly use the tool
+                </p>
+                <p>I focused on:</p>
+                <ul>
+                    <li>Decision-making behavior: How do users currently choose which carriers to prioritize?</li>
+
+                    <li>Comparison workflows: Do users typically compare policies side-by-side? Across coverages?</li>
+                        
+                    <li>Usability blockers: What slows them down the most today?</li>
+
+                </ul>
+                <div class="insights-box">
+                    <h2>Key Insights</h2>
+                    <ul>
+                        <li>Users rely heavily on carrier breadth to streamline renewals.</li>
+                        <li>There was growing demand for visibility at the individual policy level, which had not existed in the tool before.</li>
+                        <li>Being able to compare policies across coverages in a single view was a major priority.</li>
+                    </ul>
+                </div>
+
+            </div>
+         </div>
+
+
+        <div class="iterations">
+            <div class="full-width-state">
+                <div class="tiny-width">
+                    <h5>Iteration & Refinement</h5>
+                    <h2>Accordion Matrix by Coverage</h2>
+                    <p>Based on stakeholder feedback, I refined the state selection process across multiple iterations to improve efficiency, control, and discoverability.</p>
+                    <section class="iteration-section">
+                        <div class="iteration-container">
+                            <!-- Iteration 1 -->
+                            <div class="iteration-card">
+                                <h3>Iteration 1: Multi-Select Dropdown</h3>
+                                <img src="coachespick/statesearch1-2.jpg" alt="Iteration 1" onclick="openModal(this.src)">
+                                <p class="design-rationale">💡 <strong>Design Rationale:</strong> Users could <b>search and select</b> states manually via a dropdown.</p>
+                                <p class="feedback">🚫 <strong>What Happened?</strong> While useful for finding specific states, bulk selection was <b>tedious</b>—users had to select states one by one, creating unnecessary friction.</p>
+                            </div>
+                    
+                            <!-- Iteration 2 -->
+                            <div class="iteration-card">
+                                <h3>Iteration 2: Region-Based Selection</h3>
+                                <img src="coachespick/statessearch2.jpg" alt="Iteration 2" onclick="openModal(this.src)">
+                                <p class="design-rationale">💡 <strong>Design Rationale:</strong> To improve scanability, I <b>grouped states</b> into regions, aiming to help users find relevant states faster without excessive scrolling.</p>
+                                <p class="feedback">🚫 <strong>What Happened?</strong> Readability improved, but new friction emerged—switching tabs <b>disrupted selection</b> across multiple regions, adding extra clicks, while <b>limited visibility</b> made comparisons more difficult.</p>
+                            </div>
+                    
+                            <!-- Final Iteration -->
+                            <div class="iteration-card final-solution">
+                                <h3>Iteration 3: Bulk Selection with Granular Control</h3>
+                                <img src="coachespick/statessearchfinal.jpg" alt="Final Iteration" onclick="openModal(this.src)">
+                                <p class="design-rationale">💡 <strong>Final Solution:</strong> Instead of region-based selection, I <b>displayed all states</b> upfront with a <b>bulk select</b> option while preserving <b>manual fine-tuning</b>.</p>
+                                <div class="why-it-works">
+                                    <h4>Why It Works</h4>
+                                    <ul>
+                                        <li>Most users started by <b>selecting all states</b> and then fine-tuned by deselecting a few.</li>
+                                        <li>Bulk selection <b>reduced cognitive effort</b> compared to the dropdown approach.</li>
+                                        <li>Eliminating tabs and dropdowns <b>accelerated selection speed</b>, aligning with how users naturally worked.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+            <div class="full-width-naics">
+                <div class="tiny-width">
+                    <h2>NAICS Code Selection</h2>
+                    <p>The NAICS selection process followed a similar iteration path, evolving to support bulk selection while reducing cognitive overload.</p>
+                    <section class="iteration-section">
+                        <div class="iteration-container">
+                            <!-- Iteration 1 -->
+                            <div class="iteration-card">
+                                <h3>Iteration 1: Search-Based Filtering</h3>
+                                <img src="coachespick/naicsinitial.jpg" alt="Iteration 1" onclick="openModal(this.src)">
+                                <p class="design-rationale">💡 <strong>Design Rationale:</strong> A <b>search-based multi-select dropdown</b> allowed users to filter NAICS codes manually.</p>
+                                <p class="feedback">🚫 <strong>What Happened?</strong> Users <b>struggled with bulk selection</b>, needing to know exact search terms, which slowed them down.</p>
+                            </div>
+                    
+                            <!-- Iteration 2 -->
+                            <div class="iteration-card">
+                                <h3>Iteration 2: Flat List with Bulk Selection</h3>
+                                <img src="coachespick/naicsiteration1.jpg" alt="Iteration 2" onclick="openModal(this.src)">
+                                <p class="design-rationale">💡 <strong>Design Rationale:</strong> To improve visibility, I <b>displayed all NAICS codes upfront</b> in a flat list, reducing reliance on search.</p>
+                                <p class="feedback">🚫 <strong>What Happened?</strong> Speed improved, but <b>without hierarchy</b>, scanning became difficult—users struggled to differentiate between sections.</p>
+                            </div>
+                    
+                            <!-- Final Iteration -->
+                            <div class="iteration-card final-solution">
+                                <h3>Iteration 3: Progressive Accordion with Visual Hierarchy</h3>
+                                <img src="coachespick/naicsiteration3.jpg" alt="Final Iteration" onclick="openModal(this.src)">
+                                <p class="design-rationale">💡 <strong>Final Solution:</strong> Introduced collapsible categories for a structured, scalable selection experience.</p>
+                                <div class="why-it-works">
+                                    <h4>Why It Works</h4>
+                                    <ul>
+                                        <li>Users preferred scanning over searching, reinforcing the need for a structured layout.</li>
+                                        <li>Collapsible sections reduced cognitive load, preventing information overload.</li>
+                                        <li>Bulk selection was faster yet still flexible, allowing quick high-level selections with precision adjustments when needed.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="final-fidelitys">
+            <div class="tiny-width">
+                <h5>Final Solution</h5>
+                <h2>Hi Fidelity Designs</h2>
+                <p>The final high-fidelity designs reflect a balance between usability, flexibility, and speed, allowing users to seamlessly configure appetite preferences with minimal friction.</p>
+               </div>
+        </div>
+        <div class="final-solution-overview">
+            <div class="full-image">
+                <img src="coachespick/finalsolutionoverview.png">
+            </div>
+        </div>
+
+        <div class="outcomes-section">
+            <div class="full-width-dev">
+                <div class="tiny-width">
+                    <h5>Developer Handoff</h5>
+                    <h2>Translating Design into Actionable Developer Guidance</h2>
+                    <p>To ensure smooth collaboration between design and engineering, I created a detailed developer handoff document for Coaches Pick.</p>
+                    <p>The flow was organized into logical sections, each representing a major interaction group: carrier selection, appetite setup, NAICS targeting, state targeting, and confirmations and dialogs.</p>
+                    <p>Each screen is annotated with key functionality notes to clarify expected behaviors, decision points, and system validations, helping the development team accurately implement the end-to-end experience.</p>
+                    <div class="full-image">
+                        <img src="coachespick/devhandoff.png">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="outcomes-section">
+            <div class="full-width-outcomes">
+                <div class="tiny-width">
+                    <h5>Impact & Outcome</h5>
+                    <h2>Driving Efficiency & Strategic Control</h2>
+                    <div class="outcomes-container">
+                        <div class="outcome">
+                            <h3>📉 40% Fewer Support Requests</h3>
+                            <p>Before Coach’s Pick, underwriting teams had to <b>request backend changes</b> to carrier preferences, leading to delays and extra workload for support teams. Support ticket data from the first three months post-launch showed a <b>40% decrease in ranking adjustment requests</b>.</p>
+                        </div>
+                        <div class="outcome">
+                            <h3>🚀 85% Adoption in 6 Weeks</h3>
+                            <p>Usability testing and stakeholder feedback revealed that underwriters quickly adapted to the new workflow. Within six weeks, <b>85% of underwriters</b> had successfully configured at least one carrier preference, based on internal usage analytics.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="learnings-section">
+            <div class="full-width-learnings">
+                <div class="tiny-width">
+                    <h5>Learnings</h5>
+                    <h2>Looking Back to Move Forward</h2>
+                    <p>Coach’s Pick reinforced the importance of designing for flexibility while maintaining clarity. By anchoring decisions in real user behavior — like bulk-first selection and localized overrides — I was able to deliver a solution that felt native to underwriters’ workflows.</p>
+                    <p>The success metrics were strong, but I believe there’s more potential ahead. If I were to evolve the tool further, I would:</p>
+                    <ul>
+                      <li>Conduct follow-up research to evaluate override effectiveness and user satisfaction post-implementation</li>
+                      <li>Integrate reporting dashboards to visualize override impact across teams and geographies</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <button id="backToTop" class="back-to-top" title="Back to Top">↑</button>
+        
+    </div>
+
+    <!-- Fullscreen Image Modal -->
+    <div id="image-modal" class="modal" onclick="closeModal(event)">
+        <img id="modal-img">
+        <span class="close-modal" onclick="closeModal(event)">&times;</span>
+    </div>
+
+    </div>
+
+
+    <script>
+  function openModal(imageSrc) {
+            const modal = document.getElementById("image-modal");
+            const modalImg = document.getElementById("modal-img");
+            modalImg.src = imageSrc;
+            modal.classList.add("active");
+        }
+
+        function closeModal(event) {
+            if (event.target === document.getElementById("image-modal") || event.target.classList.contains("close-modal")) {
+                document.getElementById("image-modal").classList.remove("active");
+            }
+        }
+
+
+        // Get the button
+const backToTopBtn = document.getElementById("backToTop");
+
+// Show the button when the user scrolls down
+window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "flex";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+};
+
+// Scroll smoothly to the top when clicked
+backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+    </script>
+</body>
+</html>

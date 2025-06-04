@@ -32,101 +32,69 @@
                 <div class="intro-section">
                     <div class="blurry-bg"></div>
                     <div class="intro-text">
-                      <h1>My name is Jane Kim. I'm a Designer, Dancer, and Traveler.</h1>
-                      <p>Product Designer with <span class="highlight">5 years of experience</span> in insurance and enterprise software. My background in <span class="highlight">software development</span> enables me to bridge the gap between design and engineering, combining technical expertise with design thinking.</p>
+                        <h1>My name is Jane Kim. I'm a Designer, Dancer, and Traveler.</h1>
+                        <p>Product Designer with <span class="highlight">5 years of experience</span> in insurance and
+                            enterprise software. My background in <span class="highlight">software development</span>
+                            enables me to bridge the gap between design and engineering, combining technical expertise
+                            with design thinking.</p>
                     </div>
-                  </div>
-                  <section class="case-studies">
+                </div>
+                <section class="case-studies">
                     <h1>Featured Work</h1>
                     <!-- Featured Case Study -->
-                    <div class="featured-case">
-                        <a href="coachespick.html">
-                            <img src="coachespick/coachespickthumblong.jpg" alt="Coach's Pick">
-                        </a>
-                        <div class="case-content">
+                    <div class="case-study-row">
+                        <div class="case-study-image"></div>
+                        <div class="case-study-text">
                             <h3>Coaches Pick</h3>
-                            <p>Designing a structured workflow for customizing carrier recommendations.</p>
+                            <p>Designing a structured workflow for customizing carrier recommendations</p>
+                            <a href="coachespick.html" class="read-more">Read case study →</a>
                         </div>
                     </div>
-            
-                    <!-- Grid of Smaller Case Studies -->
-                    <div class="case-grid">
-                        <div class="case-card">
-                            <a href="pathdashboard.html">
-                                <img src="path/images/paththumbnaillong.png" alt="Case Study 1">
-                            </a>
+                    <div class="case-study-row">
+                        <div class="case-study-image-path"></div>
+                        <div class="case-study-text">
                             <h3>Path</h3>
-                            <p>An insurance risk control platform maximizing savings and minimizing loss impact through tailored solutions.</p>
+                            <p>An insurance risk control platform maximizing savings and minimizing loss impact through
+                                tailored solutions.</p>
+                            <a href="pathdashboard.html" class="read-more">Read case study →</a>
                         </div>
-            
-                        <div class="case-card">
-                            <a href="sequeerfull.html">
-                                <img src="sequeer/sequeerthumbnew.png" alt="Case Study 2">
-                            </a>
+                    </div>
+                    <div class="case-study-row">
+                        <div class="case-study-image-sequeer"></div>
+                        <div class="case-study-text">
                             <h3>Sequeer</h3>
                             <p>A B2C mobile app that serves as a comprehensive global search engine for the LGBTQ community.</p>
+                            <a href="sequeerfull.html" class="read-more">Read case study →</a>
                         </div>
-            
                     </div>
-                </section>
-
-                <!-- <div class="portfolio-container">
-                    <div class="portfolio-item">
-                        <a href="coachespick.html">
-                            <img src="coachespick/coachespickthumb.png" alt="Item 1">
-                        </a>
-                        <h2>USI Coaches Pick</h2>
-                        <p>A UX-driven tool for customizing carrier recommendations with precision and control.</p>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <a href="pathdashboard.html">
-                            <img src="path/images/paththumbnaillong.png" alt="Item 1">
-                        </a>
-                        <h2>USI Path</h2>
-                        <p>An insurance risk control platform maximizing savings and minimizing loss impact through tailored solutions.</p>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="sequeerfull.html">
-                            <img src="sequeer/sequeerthumbnew.png" alt="Item 2">
-                        </a>
-                        <h2>Sequeer</h2>
-                        <p>A B2C mobile app that serves as a comprehensive global search engine for the LGBTQ community.</p> 
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="casemanagement.html">
-                            <img src="casemanagement/images/casethumbnew.png" alt="Item 3">
-                        </a>
-                        <h2>Appian Case Management</h2>
-                        <p>A SaaS product designed for efficient case submission and management at local and state government levels.
-                        </p>
-                    </div>
-                </div> -->
-
-                <p id="coded">Coded in HTML, CSS, and Javascript with love :)</p>
             </div>
+            </section>
         </div>
-        
-        <script>
-            // Initialize ScrollMagic controller
-            var controller = new ScrollMagic.Controller();
+    </div>
+    <footer class="site-footer">
+        <p>Coded in HTML, CSS, and Javascript with love :)</p>
+    </footer>
 
-            // Define animations for each section
-            var tl = gsap.timeline();
+    <script>
+        // Initialize ScrollMagic controller
+        var controller = new ScrollMagic.Controller();
 
-            tl.from(".sticky-nav", { opacity: 0, y: 50, duration: 0.4 })
+        // Define animations for each section
+        var tl = gsap.timeline();
+
+        tl.from(".sticky-nav", { opacity: 0, y: 50, duration: 0.4 })
             .from(".intro-section", { opacity: 0, y: 50, duration: 0.4 })
-                .from(".case-studies", { opacity: 0, y: 50, duration: 0.4 })
+            .from(".case-studies", { opacity: 0, y: 50, duration: 0.4 })
 
-            // Create a ScrollMagic scene
-            new ScrollMagic.Scene({
-                triggerElement: "#scroll-container",
-                triggerHook: 0.5, // Trigger the animation halfway through the viewport
-                reverse: false, // Keep the animation active when scrolling up
-            })
-                .setTween(tl)
-                .addTo(controller);
-        </script>
+        // Create a ScrollMagic scene
+        new ScrollMagic.Scene({
+            triggerElement: "#scroll-container",
+            triggerHook: 0.5, // Trigger the animation halfway through the viewport
+            reverse: false, // Keep the animation active when scrolling up
+        })
+            .setTween(tl)
+            .addTo(controller);
+    </script>
 
 </body>
 
