@@ -30,13 +30,7 @@ body {
 }
 
 
-a {
-  transition: transform 0.2s ease;
-}
-a:hover {
-  transform: rotate(-3deg) scale(1.1);
-  cursor: url('hol336.cur'), pointer;
-}
+
 
 p{
   font-size: 18px;
