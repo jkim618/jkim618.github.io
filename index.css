@@ -107,6 +107,8 @@ p{
   margin: 0;
 }
 
+
+
 .highlight {
   font-weight: bold;
   text-decoration: underline;
@@ -115,40 +117,15 @@ p{
   text-underline-offset: 3px; /* Adjust the distance between the text and the underline */
 }
 
-/*top container*/
-/* .top-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  margin-bottom: 40px;
+.rotating-word {
+  display: inline-block;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.1s ease, transform 0.4s ease;
+  min-width: 100px; /* prevents layout shift */
+  text-align: left;
 }
 
-.left-column {
-  flex: 3;
-  margin-right: 40px;
-}
-
-.left-column img {
-  width: 120%; 
-  height: auto;
-}
-
-.right-column {
-  margin-top: 50px;
-  flex: 4;
-  margin-left: 60px;
-  line-height: 1.5;
-}
-
-.right-column h2{
-  margin-bottom: 0;
-  font-weight: 300;
-}
-
-.right-column h1{
-  font-size: 48px;
-  font-weight: 600;
-} */
 
 .buttons {
   margin-top: 20px;
