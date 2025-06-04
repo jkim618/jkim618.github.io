@@ -97,30 +97,45 @@
             .setTween(tl)
             .addTo(controller);
 
-        //scrolling text thing in intro
-        const words = ["Dancer", "Designer", "Traveler"];
-        const rotating = document.querySelector(".rotating-word");
+        // Rotating word logic
+const words = ["Dancer", "Designer", "Traveler"];
+const rotating = document.querySelector(".rotating-word");
+let i = 0;
 
-        let i = 0;
+function animateWordChange() {
+  const tl = gsap.timeline();
 
-        function cycleWords() {
-            gsap.to(rotating, {
-                opacity: 0,
-                y: 20,
-                duration: 0.4,
-                onComplete: () => {
-                    i = (i + 1) % words.length;
-                    rotating.textContent = words[i];
-                    gsap.fromTo(rotating, { y: -20, opacity: 0 }, {
-                        opacity: 1,
-                        y: 0,
-                        duration: 0.4
-                    });
-                }
-            });
-        }
+  tl.to(rotating, {
+    duration: 0.3,
+    opacity: 0,
+    y: 15,
+    ease: "power1.in",
+    onComplete: () => {
+      i = (i + 1) % words.length;
+      rotating.textContent = words[i];
+    },
+  });
 
-        setInterval(cycleWords, 1500); // every 3 seconds
+  tl.fromTo(
+    rotating,
+    {
+      y: -15,
+      opacity: 0,
+      scale: 0.98,
+      rotateZ: -2,
+    },
+    {
+      duration: 0.5,
+      y: 0,
+      opacity: 1,
+      scale: 1,
+      rotateZ: 0,
+      ease: "power2.out", // no bounce — just a clean settle
+    }
+  );
+}
+
+setInterval(animateWordChange, 2000);
 
         //cursor trail
         document.addEventListener("mousemove", function (e) {

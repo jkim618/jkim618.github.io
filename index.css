@@ -163,14 +163,16 @@ p{
 
 .rotating-word {
   display: inline-block;
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.1s ease, transform 0.4s ease;
-  min-width: 100px; /* prevents layout shift */
+  min-width: 120px;
   text-align: left;
+  font-weight: bold;
+
+  transition: all 0.4s ease;
+  will-change: transform, opacity;
+    text-shadow:
+    0 0 4px #d9a3ff,
+    0 0 8px #a47be6;
 }
-
-
 
 .buttons {
   margin-top: 20px;
