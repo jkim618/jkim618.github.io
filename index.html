@@ -38,6 +38,7 @@
                             with design thinking.</p>
                     </div>
 
+
                 </div>
                 <section class="case-studies">
                     <h1>Featured Work</h1>
@@ -120,8 +121,17 @@
         }
 
         setInterval(cycleWords, 1500); // every 3 seconds
-    </script>
 
+        //cursor trail
+        document.addEventListener("mousemove", function (e) {
+            const sparkle = document.createElement("div");
+            sparkle.className = "cursor-sparkle";
+            sparkle.style.left = `${e.pageX}px`;
+            sparkle.style.top = `${e.pageY}px`;
+            document.body.appendChild(sparkle);
+            setTimeout(() => sparkle.remove(), 500);
+        });
+    </script>
 </body>
 
 </html>

@@ -3,64 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rotating Words</title>
+  <title>Jane Kim Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      font-family: 'DM Sans', sans-serif;
+      background-color: #f8f8f8;
+      color: #2b2b2b;
+      overflow-x: hidden;
     }
 
-    .intro-text h1 {
-      font-size: 48px;
-      font-weight: 600;
-      margin: 0;
+    /* --- Parallax Blob --- */
+    .parallax-blob {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1200px;
+      height: 1200px;
+      background: radial-gradient(circle at 30% 30%, #734fc8, #fbc2eb, #6591ff);
+      filter: blur(180px);
+      border-radius: 50%;
+      z-index: -1;
+      opacity: 0.5;
+      animation: rotate 40s linear infinite, shiftGradient 12s ease-in-out infinite alternate;
+      pointer-events: none;
     }
 
-    .rotating-words {
-      height: 56px;
-      overflow: hidden;
-      position: relative;
+    @keyframes rotate {
+      0% { transform: translateX(-50%) rotate(0deg); }
+      100% { transform: translateX(-50%) rotate(360deg); }
     }
 
-    .words-wrapper {
+    @keyframes shiftGradient {
+      0% { background-position: 30% 30%; }
+      100% { background-position: 70% 70%; }
+    }
+
+    /* --- Intro Section --- */
+    .intro-section {
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      transition: transform 0.8s ease-in-out;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
     }
 
-    .words-wrapper span {
-      height: 56px;
-      display: flex;
-      align-items: center;
+    .intro-section h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .intro-section p {
+      max-width: 700px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      font-weight: bold;
+      text-decoration: underline;
+      text-decoration-color: #984ae2;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    .rotating-word {
+      display: inline-block;
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.3s ease, transform 0.5s ease;
+      min-width: 100px;
+    }
+
+    /* --- Case Studies --- */
+    .case-studies {
+      background-color: #f1f1f1;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .case-studies h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .case-studies p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      .intro-section h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="intro-text">
-    <h1>I'm Jane Kim.</h1>
-    <h1>I'm a</h1>
-    <div class="rotating-words">
-      <div class="words-wrapper">
-        <span>Dancer</span>
-        <span>Designer</span>
-        <span>Traveler</span>
-      </div>
-    </div>
-  </div>
+  <!-- PARALLAX GRADIENT BLOB -->
+  <div class="parallax-blob" id="parallaxBlob"></div>
+
+  <!-- INTRO SECTION -->
+  <section class="intro-section">
+    <h1>My name is Jane Kim. I'm a <span class="rotating-word">Dancer</span>.</h1>
+    <p>
+      Product Designer with <span class="highlight">5 years of experience</span> in insurance and
+      enterprise software. My background in <span class="highlight">software development</span>
+      enables me to bridge the gap between design and engineering.
+    </p>
+  </section>
+
+  <!-- CASE STUDIES SECTION -->
+  <section class="case-studies">
+    <h2>Scroll Activated Content</h2>
+    <p>This section scrolls over the animated gradient blob, giving a smooth parallax effect.</p>
+  </section>
 
   <script>
-    const wrapper = document.querySelector('.words-wrapper');
-    const totalItems = wrapper.children.length;
-    let index = 0;
+    // Word rotation logic
+    const words = ["Dancer", "Designer", "Traveler"];
+    const rotating = document.querySelector(".rotating-word");
+    let i = 0;
 
-    setInterval(() => {
-      index = (index + 1) % totalItems;
-      wrapper.style.transform = `translateY(-${index * 56}px)`;
-    }, 3000); // change every 3 seconds
+    function cycleWords() {
+      rotating.style.opacity = 0;
+      rotating.style.transform = "translateY(20px)";
+      setTimeout(() => {
+        i = (i + 1) % words.length;
+        rotating.textContent = words[i];
+        rotating.style.transform = "translateY(-20px)";
+        rotating.style.opacity = 1;
+      }, 400);
+    }
+
+    setInterval(cycleWords, 3000);
+
+    // Parallax effect
+    const blob = document.getElementById("parallaxBlob");
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY;
+      blob.style.top = `${-scrollY * 0.3}px`;
+    });
   </script>
 
 </body>
