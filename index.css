@@ -234,7 +234,7 @@ p{
 .case-study-image {
   flex: 1.75;
   min-height: 420px;
-  background-image: url('coachespick/coachespickthumblong.jpg'); /* Replace with your image path */
+  background-image: url('coachespick/CoachesPick.png'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   transition: transform 0.5s ease;
@@ -247,7 +247,7 @@ p{
 .case-study-image-path {
   flex: 1.75;
   min-height: 420px;
-  background-image: url('path/images/paththumbnaillong.png'); /* Replace with your image path */
+  background-image: url('path/images/PathThumbnail.png'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   transition: transform 0.5s ease;
@@ -260,7 +260,7 @@ p{
 .case-study-image-sequeer {
     flex: 1.75;
   min-height: 420px;
-  background-image: url('  sequeer/sequeerthumbnew.png'); /* Replace with your image path */
+  background-image: url('sequeer/SequeerThumbnail.png'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   transition: transform 0.5s ease;
