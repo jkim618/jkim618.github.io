@@ -144,6 +144,7 @@ p{
   }
   
   .left-column {
+    margin-top: 18px;
     flex: 3;
     margin-right: 40px;
   }
