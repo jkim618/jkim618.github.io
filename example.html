@@ -1,158 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jane Kim Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background-color: #f8f8f8;
-      color: #2b2b2b;
-      overflow-x: hidden;
-    }
+<div style="display: flex; flex-direction: column; gap: 24px; font-family: 'Inter', sans-serif; color: white; max-width: 1000px; margin: auto;">
+  <h2 style="font-size: 1.8rem; font-weight: 600;">Reducing Cognitive Overload</h2>
+  <p style="font-size: 1rem; color: #ccc;">To streamline navigation and reduce visual load, I split the previously combined layout into two dedicated pages. Stakeholders confirmed that while the 'Loss Impact' chart was helpful, the 'Solution Matrix' deserved a focused space to support decision-making and scalability.</p>
 
-    /* --- Parallax Blob --- */
-    .parallax-blob {
-      position: fixed;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 1200px;
-      height: 1200px;
-      background: radial-gradient(circle at 30% 30%, #734fc8, #fbc2eb, #6591ff);
-      filter: blur(180px);
-      border-radius: 50%;
-      z-index: -1;
-      opacity: 0.5;
-      animation: rotate 40s linear infinite, shiftGradient 12s ease-in-out infinite alternate;
-      pointer-events: none;
-    }
+  <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+    <!-- Before -->
+    <div style="flex: 1; min-width: 300px; background-color: #1a1a1a; padding: 16px; border-radius: 12px; border: 1px solid #444;">
+      <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Before</h3>
+      <ul style="list-style: disc; padding-left: 20px;">
+        <li>All content on one page increased cognitive load</li>
+        <li>"View Solution Matrix" only scrolled to bottom</li>
+        <li>Performance lag due to heavy content</li>
+      </ul>
+    </div>
 
-    @keyframes rotate {
-      0% { transform: translateX(-50%) rotate(0deg); }
-      100% { transform: translateX(-50%) rotate(360deg); }
-    }
+    <!-- After -->
+    <div style="flex: 1; min-width: 300px; background-color: #1a1a1a; padding: 16px; border-radius: 12px; border: 1px solid #444;">
+      <h3 style="font-size: 1.2rem; margin-bottom: 8px;">After</h3>
+      <ul style="list-style: disc; padding-left: 20px;">
+        <li>Split into two pages: Loss Impact & Solution Matrix</li>
+        <li>"View Solution Matrix" now navigates to a dedicated view</li>
+        <li>Improved clarity, speed, and future scalability</li>
+      </ul>
+    </div>
+  </div>
 
-    @keyframes shiftGradient {
-      0% { background-position: 30% 30%; }
-      100% { background-position: 70% 70%; }
-    }
-
-    /* --- Intro Section --- */
-    .intro-section {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 20px;
-    }
-
-    .intro-section h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
-    .intro-section p {
-      max-width: 700px;
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
-
-    .highlight {
-      font-weight: bold;
-      text-decoration: underline;
-      text-decoration-color: #984ae2;
-      text-decoration-thickness: 2px;
-      text-underline-offset: 3px;
-    }
-
-    .rotating-word {
-      display: inline-block;
-      opacity: 1;
-      transform: translateY(0);
-      transition: opacity 0.3s ease, transform 0.5s ease;
-      min-width: 100px;
-    }
-
-    /* --- Case Studies --- */
-    .case-studies {
-      background-color: #f1f1f1;
-      padding: 100px 20px;
-      text-align: center;
-    }
-
-    .case-studies h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .case-studies p {
-      max-width: 600px;
-      margin: 0 auto;
-      font-size: 1.1rem;
-      color: #444;
-    }
-
-    @media (max-width: 600px) {
-      .intro-section h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- PARALLAX GRADIENT BLOB -->
-  <div class="parallax-blob" id="parallaxBlob"></div>
-
-  <!-- INTRO SECTION -->
-  <section class="intro-section">
-    <h1>My name is Jane Kim. I'm a <span class="rotating-word">Dancer</span>.</h1>
-    <p>
-      Product Designer with <span class="highlight">5 years of experience</span> in insurance and
-      enterprise software. My background in <span class="highlight">software development</span>
-      enables me to bridge the gap between design and engineering.
-    </p>
-  </section>
-
-  <!-- CASE STUDIES SECTION -->
-  <section class="case-studies">
-    <h2>Scroll Activated Content</h2>
-    <p>This section scrolls over the animated gradient blob, giving a smooth parallax effect.</p>
-  </section>
-
-  <script>
-    // Word rotation logic
-    const words = ["Dancer", "Designer", "Traveler"];
-    const rotating = document.querySelector(".rotating-word");
-    let i = 0;
-
-    function cycleWords() {
-      rotating.style.opacity = 0;
-      rotating.style.transform = "translateY(20px)";
-      setTimeout(() => {
-        i = (i + 1) % words.length;
-        rotating.textContent = words[i];
-        rotating.style.transform = "translateY(-20px)";
-        rotating.style.opacity = 1;
-      }, 400);
-    }
-
-    setInterval(cycleWords, 3000);
-
-    // Parallax effect
-    const blob = document.getElementById("parallaxBlob");
-    window.addEventListener("scroll", () => {
-      const scrollY = window.scrollY;
-      blob.style.top = `${-scrollY * 0.3}px`;
-    });
-  </script>
-
-</body>
-</html>
+  <p style="font-size: 0.95rem; margin-top: 16px; color: #aaa;">This change was driven by feedback during stakeholder sessions and tested internally for performance gains and clearer user journeys.</p>
+</div>

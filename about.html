@@ -16,7 +16,7 @@
 <body>
     <nav class="sticky-nav">
         <a class="logo" href="index.html">
-            <img src="logoTransparent.png" alt="Your Logo">
+            <img src="logoTransparentwhite.png" alt="Your Logo">
         </a>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -71,15 +71,16 @@
                 .setTween(tl)
                 .addTo(controller);
 
-                        //cursor trail
-document.addEventListener("mousemove", function (e) {
-    const sparkle = document.createElement("div");
-    sparkle.className = "cursor-sparkle";
-    sparkle.style.left = `${e.pageX - 5}px`; // center it
-    sparkle.style.top = `${e.pageY - 5}px`;
-    document.body.appendChild(sparkle);
-    setTimeout(() => sparkle.remove(), 600);
-});
+                    
+            //cursor
+            document.addEventListener("mousemove", function (e) {
+                const sparkle = document.createElement("div");
+                sparkle.className = "cursor-sparkle";
+                sparkle.style.left = `${e.pageX}px`;
+                sparkle.style.top = `${e.pageY}px`;
+                document.body.appendChild(sparkle);
+                setTimeout(() => sparkle.remove(), 500);
+            });
         </script>
 
 </body>

@@ -4,8 +4,8 @@ body {
   letter-spacing: -0.2px;
   margin: 0;
   padding: 0;
-  background-color: #F8F8F8;
-  color: #2b2b2b;
+  background-color: black;
+  color: white;
     cursor: url('hol336.cur'), auto;
   }
   
@@ -26,13 +26,13 @@ body {
     0 0 14px rgba(199, 146, 255, 0.4);
   transform: scale(1);
 }
+
 @keyframes sparkleFade {
   to {
     opacity: 0;
     transform: scale(1.8) rotate(20deg);
   }
 }
-
 
 
 p{
@@ -47,64 +47,74 @@ p{
     transition: filter 0.3s; /* Add a smooth transition effect */
   }
   
-  .sticky-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  
-  .sticky-nav .logo {
-    flex-grow: 1; /* Allow the logo to grow and take up remaining space */
-  }
-  
-  .sticky-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    margin-right: 80px; /* Add margin to the right of the links */
-  }
-  
-  .sticky-nav ul li {
-    margin-left: 32px;
-  }
-  
-  .sticky-nav ul li:first-child {
-    margin-left: 0;
-  }
-  
-  .sticky-nav ul li a.active {
-    color: black; /* Color for active tab */
-    font-weight: bold; /* Bold font for active tab */
-  }
-  
-  .sticky-nav ul li a {
-    text-decoration: none;
-    color: #989898;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  .sticky-nav ul li a:hover {
-    color: #333;
-  }
-  
-  .logo{
-    margin-left: 40px;
-  }
-  
-  .logo img {
-    max-width: 60px; /* Adjust the max-width of the logo */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px;
-  }
+ .sticky-nav {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 1000;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+     margin-top: 20px;
+ }
+
+ .sticky-nav .logo {
+     flex-grow: 1;
+     /* Allow the logo to grow and take up remaining space */
+ }
+
+ .sticky-nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     margin-right: 80px;
+     /* Add margin to the right of the links */
+ }
+
+ .sticky-nav ul li {
+     margin-left: 32px;
+ }
+
+ .sticky-nav ul li:first-child {
+     margin-left: 0;
+ }
+
+ .sticky-nav ul li a.active {
+     color: white;
+     /* Color for active tab */
+     font-weight: bold;
+     /* Bold font for active tab */
+ }
+
+ .sticky-nav ul li a {
+     text-decoration: none;
+     color: #989898;
+     font-weight: 500;
+     transition: color 0.3s;
+ }
+
+ .sticky-nav ul li a:hover {
+     color: #ad54ff;
+ }
+
+ .logo {
+     margin-left: 40px;
+ }
+
+ .logo img {
+     max-width: 60px;
+     /* Adjust the max-width of the logo */
+     height: auto;
+     /* Maintain aspect ratio */
+     margin-right: 20px;
+     margin: 0 !important
+ }
+
+
+
   
   #coded{
     font-size: 12px;
@@ -177,9 +187,10 @@ p{
   }
   
   .cta-button:hover {
-    background-color: #8EC5FA;
-    box-shadow: 4px 4px 0px black;
+    background-color: #8032c8;
+    box-shadow: 4px 4px 0px white;
     transform: translateY(-4px) translateX(-4px);
+    color: white;
   }
   
   
